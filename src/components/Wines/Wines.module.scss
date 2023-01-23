@@ -1,0 +1,67 @@
+.container {
+  height: 75vh;
+  overflow: hidden;
+  background-color: #E8E1D9;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  background-image: linear-gradient(to right, white, #DECBA4);
+}
+
+.right {
+  width: 50%;
+}
+
+.allWines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  height: 75vh;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.allWinesImg {
+  width: 150px;
+  height: 300px;
+  transition: 2s;
+}
+
+
+.allWines:hover {
+
+  .allWinesImg{
+    transition: 2s;
+    transform: rotate(90deg);
+  }
+
+
+  .title {
+    opacity: 1;
+  }
+
+}
+
+.title {
+  opacity: 0;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .container{
+    overflow: scroll;
+  }
+}
+
+

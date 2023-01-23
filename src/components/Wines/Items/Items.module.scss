@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 74vh;
+  margin-top: 10px;
+}
+
+.wineImg {
+  width: 350px;
+  height: 500px;
+}
+
+.description {
+  font-family: Jost;
+  max-width: 300px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+

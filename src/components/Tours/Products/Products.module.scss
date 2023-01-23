@@ -1,0 +1,33 @@
+.container {
+  height: 75vh;
+  //background-image: linear-gradient(to right, white, #DECBA4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left {
+  //background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  gap: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.right {
+  //background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+  gap: 50px;
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+}

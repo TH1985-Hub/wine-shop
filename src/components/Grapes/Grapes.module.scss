@@ -1,0 +1,51 @@
+.container {
+  height: 75vh;
+  background-image: linear-gradient(to right, white, #DECBA4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+.right {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+
+.background {
+  height: 75vh;
+  position: absolute;
+  right: 0;
+}
+
+.content {
+  display: flex;
+}
+
+.item {
+  width: 400px;
+  padding: 36px 26px;
+}
+
+.historyImg {
+  height: 42vh;
+  max-width: 400px;
+  margin-right: 50px;
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+}

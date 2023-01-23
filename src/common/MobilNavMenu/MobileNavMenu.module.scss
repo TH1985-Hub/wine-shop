@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://images.pexels.com/photos/2339180/pexels-photo-2339180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.sections {
+  font-family: Jost;
+  flex-wrap: wrap;
+  font-size: 42px;
+  font-weight: 800;
+  color: rgba(242,211,197,0.32);
+}
+
+.text {
+  background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 25.5%, transparent 40.25%);
+}
+
+.icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
