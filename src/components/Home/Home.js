@@ -1,10 +1,11 @@
 import styles from './Home.module.scss';
 import img from './video/wine.jpg'
+import video from './video/homeVideo.mp4'
+
 function Home() {
   return (
     <div className={styles.container}>
-      {/*<video src="/public/assets/videos/video.mp4" autoPlay loop playsInline muted />*/}
-      <img className={styles.img} src={img} alt="background" />
+      <video src={video} className={styles.img} autoPlay loop playsInline muted />
     </div>
   );
 }

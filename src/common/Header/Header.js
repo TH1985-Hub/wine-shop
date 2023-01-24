@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import cx from 'classnames';
-
 import { ReactComponent as Logo } from './img/logo.svg';
 import grape from './img/grape.png';
 import wine from './img/wine.png';
@@ -27,14 +26,14 @@ function Header({setOpened}) {
 
   return (
     <div className={cx(styles.header)}>
-      <Logo className={styles.logo} />
+      <Logo className={styles.logo} onClick={() => window.location.href = '/'} />
       <div className={styles.leftPart}>
         { !isMobileOrLaptop ?
           <div className={styles.sections}>
-            <img src={history} className={styles.shake} alt="grape"/>
-            <img src={factory} className={styles.shake} alt="grape"/>
-            <img src={grape}  className={styles.shake}alt="grape"/>
-            <img src={wine} className={styles.shake} alt="grape"/>
+            <img src={history} className={styles.shake} alt="grape" onClick={() => window.location.href = '/history'} />
+            <img src={factory} className={styles.shake} alt="grape" onClick={() => window.location.href = '/tours'} />
+            <img src={grape}  className={styles.shake} alt="grape" onClick={() => window.location.href = '/wines'} />
+            <img src={wine} className={styles.shake} alt="grape" onClick={() => window.location.href = '/grapes'} />
           </div>
           : <WidgetsIcon className={styles.icon} onClick={() => setOpened(true)} />
         }
