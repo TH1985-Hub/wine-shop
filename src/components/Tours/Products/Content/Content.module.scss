@@ -1,15 +1,15 @@
 .flipCard {
   margin-top: 10px;
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   perspective: 1000px;
-  border-radius:50%;
+  //border-radius:50%;
   display: inline-block;
 }
 
 .flipCardInner {
-  border-radius:50%;
+  //border-radius:50%;
   display: inline-block;
   position: relative;
   width: 100%;
@@ -35,19 +35,34 @@
 .flipCardFront {
   background-color: #bbb;
   color: black;
-  border-radius:50%;
+  //border-radius:50%;
 }
 
 .flipCardBack {
   background-image: linear-gradient(to right, white, #3E5151);
   color: white;
   transform: rotateY(180deg);
-  border-radius:50%;
+  //border-radius:50%;
+}
+
+.text {
+  margin-top: 40%;
 }
 
 .flipImg {
-  width: 200px;
-  height: 200px;
-  border-radius:50%;
+  width: 230px;
+  height: 230px;
+  //border-radius:50%;
   display: inline-block;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 666px) {
+  .flipImg {
+    width: 396px;
+  }
+  .flipCard {
+    width: 396px;
+  }
 }

@@ -1,36 +1,74 @@
 .container {
   height: 75vh;
-  background-image: linear-gradient(to right, #e8d4cb, #DECBA4);
+  background-image: linear-gradient(to left, white, #b4afaf);
+  background-color: whitesmoke;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.background {
-  position: absolute;
-  right: 0;
+.title {
+  font-family: Bodoni\ 72, serif;
+  margin-bottom: 0;
 }
 
 .left {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .right {
   width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 75vh;
 }
 
-@media screen and (max-width: 1024px) {
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  max-height: 300px;
+}
+
+.info {
+  font-size: 16px;
+  font-family: Bodoni\ 72, serif;
+  line-height: 1.4;
+  overflow: auto;
+  padding: 0 15px;
+  max-height: 220px;
+}
+
+.info::-webkit-scrollbar {
+  width: 2px;
+  cursor: pointer;
+}
+
+.info::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
+}
+
+/* Handle */
+.info::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+@media screen and (max-width: 1200px) {
   .container {
-    flex-wrap: wrap;
-    flex-direction: column;
     height: 100%;
+    flex-direction: column-reverse;
   }
 
   .left {
@@ -39,11 +77,23 @@
 
   .right {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
-  .background {
-    display: none;
+  .description {
+    margin-bottom: 60px;
+    max-width: 700px;
   }
+
 }
 
+@media screen and (max-width: 666px) {
+  .container {
+    background-image: none;
+  }
+}
 

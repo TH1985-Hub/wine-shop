@@ -13,10 +13,11 @@ function Wines() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.left}>
-        <Items img={wines[isWine]['img']} text={wines[isWine]['text']} title={wines[isWine]['title']}/>
+      <Items img={wines[isWine]['img']} />
+      <div className={styles.description}>
+        <h1>{wines[isWine]['title']}</h1>
+        <div>{wines[isWine]['text']}</div>
       </div>
-      <div className={styles.right}>
         { isAllShow
           ? <Products setIsWine={setIsWine} /> :
           <div className={styles.allWines}>
@@ -24,12 +25,10 @@ function Wines() {
               <h2 className={styles.title}>Click For Show All Wines</h2>
               <div className={styles.imgContainer}>
                 <Logo className={styles.allWinesImg} onClick={() => setIsShowAll(!isAllShow)}/>
-                {/*<img src={wine} className={styles.allWinesImg} alt="gif" onClick={() => setIsShowAll(!isAllShow)}/>*/}
               </div>
             </div>
           </div>
         }
-      </div>
     </div>
   );
 }

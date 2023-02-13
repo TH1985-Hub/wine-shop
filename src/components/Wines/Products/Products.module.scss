@@ -1,8 +1,23 @@
 .container {
-  display: flex;
-  justify-content: space-around;
-  background-image: linear-gradient(to right, #DECBA4, #3E5151);
-  height: 75vh;
 }
 
+.row {
+  display: flex;
+  gap: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .row {
+    gap: 100px;
+  }
+}
 
+@media screen and (max-width: 666px) {
+  .container {
+
+  }
+
+  .row {
+    max-width: 396px;
+    flex-direction: column;
+  }
+}

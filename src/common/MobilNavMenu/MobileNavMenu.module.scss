@@ -15,10 +15,16 @@
   flex-wrap: wrap;
   font-size: 42px;
   font-weight: 800;
-  color: rgba(242,211,197,0.32);
+  color: wheat;
 }
 
 .text {
+  color: wheat;
+  text-decoration: none;
+}
+
+.text:hover {
+  transition: 0.7s;
   background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 25.5%, transparent 40.25%);
 }
 

@@ -1,26 +1,39 @@
+import Carousel from '../../common/Carousel/Carousel';
+import history from './img/his.jpg';
+import history1 from './img/his1.jpg';
+import history2 from './img/his2.jpg';
+import grape from  './img/grape.svg'
 import styles from './Grapes.module.scss';
-import grape from './img/grape.jpg';
-import grape2 from './img/grape2.jpg';
-import grape3 from './img/grape3.jpg';
-import grape4 from './img/grape4.jpg';
+import { texts } from '../../common/texts/texts';
 
-import Content from './content/Content';
-const text = "The best Grape";
+function Grapes({ lang }) {
+  const images = [
+    {
+      src: history,
+      alt: "Image 1"
+    },
+    {
+      src: history1,
+      alt: "Image 2"
+    },
+    {
+      src: history2,
+      alt: "Image 3"
+    }
+  ];
 
-function Grapes() {
   return (
     <div className={styles.container}>
+      {/*<div className={styles.background}><img src={grape} alt="grape"/></div>*/}
+
       <div className={styles.left}>
-        <Content img={grape} text={text}  />
+        <div className={styles.description}>
+          <h1 className={styles.title}>{texts[lang]['grapesTitle']}</h1>
+          <p className={styles.info}>{texts[lang]['grapesText']}</p>
+        </div>
       </div>
       <div className={styles.right}>
-        <Content img={grape2} text={text}  />
-      </div>
-      <div className={styles.left}>
-        <Content img={grape3} text={text}  />
-      </div>
-      <div className={styles.right}>
-        <Content img={grape4} text={text}  />
+        <Carousel images={images} />
       </div>
     </div>
   );

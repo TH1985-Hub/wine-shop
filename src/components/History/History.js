@@ -1,26 +1,41 @@
-import styles from './History.module.scss';
-import background from './img/background.png';
-import history from './img/history.jpg';
-import history1 from './img/history1.jpg';
-import history2 from './img/history2.jpg';
+import Carousel from '../../common/Carousel/Carousel';
+import { useState } from 'react';
 
-function History() {
+import { texts } from '../../common/texts/texts';
+
+import wine1 from '../../components/Wines/Products/img/wine1.jpg';
+import wine2 from '../../components/Wines/Products/img/wine2.jpg';
+import wine3 from '../../components/Wines/Products/img/wine3.jpg';
+import styles from './History.module.scss';
+
+function History({ lang }) {
+
+  const images = [
+    {
+      src: wine1,
+      alt: "Image 1"
+    },
+    {
+      src: wine2,
+      alt: "Image 2"
+    },
+    {
+      src: wine3,
+      alt: "Image 3"
+    }
+  ];
+
   return (
     <div className={styles.container}>
-      <img src={background} className={styles.background}  alt='tours'/>
-      <div className={styles.content}>
+      <div className={styles.left}>
         <div className={styles.description}>
-          <p>Jraghatspanyan Winery is a wine production company located in the Armavir Region of Armenia. </p>
-          <p>The family has been involved in wine making for many years. Two years ago they invested in the business and acquired new technologies to keep update with quality standards.</p>
-          <p>They are striving to combine the cherished traditions and modern approaches. Jraghatspanyan wines, ripen and mature acquiring exclusive tones in an ancient cellar built in the 1890s.</p>
-        </div>
-        <div className={styles.imgContainer}>
-          <img className={styles.historyImg} src={history} alt='tours'/>
-          <img className={styles.historyImg}src={history1} alt='tours'/>
-          <img className={styles.historyImg} src={history2} alt='tours'/>
+          <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>
+          <p className={styles.info}>{texts[lang]['historyText']}</p>
         </div>
       </div>
-
+      <div className={styles.right}>
+        <Carousel images={images} />
+      </div>
     </div>
   );
 }

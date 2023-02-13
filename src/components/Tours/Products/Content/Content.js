@@ -8,7 +8,7 @@ function Content({ img, text }) {
             <img  className={styles.flipImg} src={img} alt='tours'  />
           </div>
           <div className={styles.flipCardBack}>
-            <p>{text}</p>
+            <p className={styles.text}>{text}</p>
           </div>
         </div>
       </div>

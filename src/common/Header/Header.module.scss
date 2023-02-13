@@ -7,9 +7,13 @@
   width: 100%;
   min-width: 320px;
   min-height: 90px;
-  background-color: #DDD4CA;
+  background-color: whitesmoke;
   padding: 0 35px;
   z-index: 900;
+
+  &Disable {
+    display: none;
+  }
 }
 
 .shake:hover {
@@ -46,6 +50,17 @@
   height: 60px !important;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnWrapper {
+  border-right: 2px solid grey;
+  padding: 5px;
+}
+
 .shopBtn {
   display: flex;
   justify-content: center;
@@ -56,6 +71,19 @@
   border-radius: 100px;
   color: white;
   cursor: pointer;
+}
+
+.languages {
+  display: grid;
+  margin-left: 5px;
+
+  span {
+    cursor: pointer;
+  }
+
+  span:hover {
+    background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 25.5%, transparent 40.25%);
+  }
 }
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,49 @@
+.carousel {
+  width: 500px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 50px;
+
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.btnPrev,
+.btnNext {
+  font-size: 15px;
+  cursor: pointer;
+  height: 50vh;
+  background-color: rgb(149 165 124) ;
+  opacity: 0;
+  color: whitesmoke;
+  border: none;
+  transition: opacity 1s;
+
+}
+
+.carousel:hover .btnPrev {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.carousel:hover .btnNext {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.img {
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    margin-left: 0;
+  }
+}

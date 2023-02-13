@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import {BrowserRouter, Route, Switch } from "react-router-dom";
+import React, {useCallback, useState} from 'react';
+import {Route, Routes, Navigate } from "react-router-dom";
 import './App.module.scss';
 import styles from './App.module.scss';
 import Home from './components/Home/Home';
@@ -14,39 +14,24 @@ import Grapes from './components/Grapes/Grapes';
 function App() {
   const [ opened, setOpened ] = useState(false);
 
-  const renderContent = () =>
-  <>
-    <BrowserRouter>
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route  path='/tours'>
-          <Tours />
-        </Route>
-        <Route path='/history'>
-          <History />
-        </Route>
-        <Route path='/wines'>
-          <Wines />
-        </Route>
-        <Route path='/grapes'>
-          <Grapes />
-        </Route>
-      </Switch>
-    </BrowserRouter>
-  </>
-
-
+  const open = useCallback(setOpened, [])
+  const [ lang, setLang ] = useState('en');
 
   return (
     <div className={styles.app}>
-
-
-      { opened ? <MobileNavMenu setOpened={setOpened}/> :
+      { opened ? <MobileNavMenu lang={lang} setOpened={setOpened}/> :
        <>
-         <Header setOpened={setOpened}/>
-         { renderContent() }
+         <Header setOpened={open} setLang={setLang} />
+         <div>
+           <Routes>
+             <Route index element={<Home lang={lang} />} />
+             <Route path='/tours' element={<Tours lang={lang} />} />
+             <Route path='/history' element={<History lang={lang} />} />
+             <Route path='/wines' element={<Wines />} />
+             <Route path='/grapes' element={<Grapes  lang={lang}/>} />
+             <Route path='*' element={<Navigate to={<Home />} />} />
+           </Routes>
+         </div>
          <Footer />
        </>
       }

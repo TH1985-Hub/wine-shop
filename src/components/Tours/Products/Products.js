@@ -1,22 +1,20 @@
 import Content from './Content/Content';
-import reserve from './img/reserve.jpg';
+import tour from './img/tour.jpg';
+import tour1 from './img/tour1.jpg';
+import tour2 from './img/tour2.jpg';
+import tour3 from './img/tour3.jpg';
 import styles from './Products.module.scss';
-import grape from '../../Grapes/img/grape.jpg';
-import grape2 from '../../Grapes/img/grape2.jpg';
-import grape3 from '../../Grapes/img/grape3.jpg';
-import grape4 from '../../Grapes/img/grape4.jpg';
-import Items from '../Items/Items';
 
-function Products({setIsWine}) {
+function Products({ setIsTours }) {
   return (
   <div className={styles.container}>
-    <div className={styles.left}>
-      <Content img={reserve} />
-      <Content img={reserve} />
+    <div>
+      <div onClick={()=> setIsTours('1')}><Content img={tour} text={'Click For Details'} /></div>
+      <div onClick={()=> setIsTours('2')}><Content img={tour1} text={'Click For Details'} /></div>
     </div>
-    <div className={styles.right}>
-      <Content img={reserve} />
-      <Content img={reserve} />
+    <div>
+      <div onClick={()=> setIsTours('3')}><Content img={tour2} text={'Click For Details'} /></div>
+      <div onClick={()=> setIsTours('4')}><Content img={tour3} text={'Click For Details'} /></div>
     </div>
   </div>
   );

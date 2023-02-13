@@ -1,37 +1,70 @@
 .container {
   height: 75vh;
-  background-color: #E8E1D9;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .background {
   position: absolute;
   right: 0;
-  height: 75vh;
-  width: 100%;
+  top: 0;
+
+  img {
+    width: 250px;
+    height: 300px;
+  }
 }
 
-.content {
-  padding-top: 15px;
+.left{
+  width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  //background: rgb(149 165 124);
+  //background: linear-gradient(0deg, rgb(149 165 124) 50%, rgba(255,255,255,1) 50%);
+  background-image: linear-gradient(to bottom, white, rgb(149 165 124) );
+}
+
+.right {
+  width: 65%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-image: linear-gradient(to right, white, rgb(149 165 124) );
+  height: 75vh;
+}
+
+.title {
+  font-family: Bodoni\ 72, serif;
+  margin-bottom: 0;
 }
 
 .description {
-  margin: 0 20px;
+  border: 1px solid  rgb(98,152,152);
+  border-top: none;
+  background-color: #ffffff;
+  width: 350px;
+  height: 75vh;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-}
-
-.historyImg{
-  width: 44vh;
-  height: 30vh;
-  padding: 0 15px;
-}
-
-.imgContainer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  margin: 0;
+}
+
+.info {
+  font-size: 16px;
+  font-family: Bodoni\ 72, serif;
+  line-height: 1.4;
+  border-bottom:  1px solid black;
+  overflow: auto;
+  height: 400px;
+}
+
+.info::-webkit-scrollbar{
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
@@ -39,25 +72,20 @@
     height: 100%;
   }
 
-  .content {
-    height: 100%;
+  .left {
+    width: 100%;
+    justify-content: center;
+    background-image: linear-gradient(to right, white, rgb(149 165 124) );
   }
 
-  .imgContainer {
-    flex-wrap: wrap;
+  .right {
+    width: 100%;
     justify-content: center;
   }
 
-  .imgContainer:last-child {
-    margin-bottom: 15px;
-  }
-
-  .historyImg{
-    margin-top: 10px;
-  }
-
-  .background {
-    display: none;
+  .description {
+    margin-top: 15px;
+    border-top: 1px solid  rgb(98,152,152);
   }
 }
 
