@@ -3,25 +3,40 @@ import { useState } from 'react';
 
 import { texts } from '../../common/texts/texts';
 
-import wine1 from '../../components/Wines/Products/img/wine1.jpg';
-import wine2 from '../../components/Wines/Products/img/wine2.jpg';
-import wine3 from '../../components/Wines/Products/img/wine3.jpg';
+import pic1 from './img/his1.jpg';
+import pic2 from './img/his2.jpg';
+import pic3 from './img/his3.jpg';
+import pic4 from './img/his4.jpg';
+import pic5 from './img/his5.jpg';
+import pic6 from './img/his6.jpg';
 import styles from './History.module.scss';
 
 function History({ lang }) {
 
   const images = [
     {
-      src: wine1,
+      src: pic1,
       alt: "Image 1"
     },
     {
-      src: wine2,
+      src: pic2,
       alt: "Image 2"
     },
     {
-      src: wine3,
+      src: pic3,
       alt: "Image 3"
+    },
+    {
+      src: pic4,
+      alt: "Image 4"
+    },
+    {
+      src: pic5,
+      alt: "Image 5"
+    },
+    {
+      src: pic6,
+      alt: "Image 6"
     }
   ];
 

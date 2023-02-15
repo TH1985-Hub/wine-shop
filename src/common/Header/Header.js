@@ -33,7 +33,9 @@ function Header({ setOpened, setLang }) {
 
   return (
     <div className={cx(styles.header, {[styles.headerDisable]: isHomePage})}>
-      <Logo className={styles.logo} onClick={() => window.location.href = '/'} />
+      <NavLink to={'/'}>
+        <Logo className={styles.logo} />
+      </NavLink>
       <div className={styles.leftPart}>
         { !isMobileOrLaptop ?
           <div className={styles.sections}>
@@ -55,7 +57,9 @@ function Header({ setOpened, setLang }) {
         </div>
       { !isMobileOrLaptop &&
         <div className={styles.wrapper}>
-          <div className={styles.btnWrapper}><div className={styles.shopBtn}>Buy Tours</div></div>
+          <NavLink to={'payment'}>
+            <div className={styles.btnWrapper}><div className={styles.shopBtn}>Buy Tours</div></div>
+          </NavLink>
           <div className={styles.languages}>
             <span onClick={changeLangEn}>EN</span>
             <span onClick={changeLangRu}>RU</span>

@@ -1,11 +1,11 @@
 import Content from './Content/Content';
 
-import wine1 from './img/wine1.jpg';
-import wine2 from './img/wine2.jpg';
-import wine3 from './img/wine3.jpg';
-import wine4 from './img/wine4.jpg';
-import wine5 from './img/wine5.jpg';
-import reserve from './img/reserve.jpg'
+import garanDmak from './img/garanDmak.jpg';
+import redDry from './img/redDry.jpg';
+import reserveDry from './img/reserveDry.jpg';
+import roseDry from './img/roseDry.jpg';
+import tigraniSpecial from './img/tigraniSpecial.jpg';
+import whiteDry from './img/whiteDry.jpg'
 
 import styles from './Products.module.scss';
 
@@ -13,14 +13,14 @@ function Products({setIsWine}) {
   return (
     <div className={styles.container}>
       <div className={styles.row}>
-        <div onClick={()=> setIsWine('1')}><Content img={reserve} /></div>
-        <div onClick={()=> setIsWine('2')}><Content img={wine2} /></div>
-        <div onClick={()=> setIsWine('3')}><Content img={wine3} /></div>
+        <div onClick={()=> setIsWine('1')}><Content img={garanDmak} /></div>
+        <div onClick={()=> setIsWine('2')}><Content img={redDry} /></div>
+        <div onClick={()=> setIsWine('3')}><Content img={reserveDry} /></div>
       </div>
       <div className={styles.row}>
-        <div onClick={()=> setIsWine('4')}><Content img={wine4} /></div>
-        <div onClick={()=> setIsWine('5')}><Content img={wine5} /></div>
-        <div onClick={()=> setIsWine('6')}><Content img={wine1} /></div>
+        <div onClick={()=> setIsWine('4')}><Content img={roseDry} /></div>
+        <div onClick={()=> setIsWine('5')}><Content img={tigraniSpecial} /></div>
+        <div onClick={()=> setIsWine('6')}><Content img={whiteDry} /></div>
       </div>
 
       {/* ---- This part for 9 wine products showing ---- */}

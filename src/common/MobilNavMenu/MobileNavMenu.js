@@ -10,19 +10,19 @@ function MobileNavMenu({ setOpened, lang }) {
       <div className={styles.container}>
         <CancelIcon className={styles.icon} onClick={() => setOpened(false)} />
         <div className={styles.sections}>
-        <NavLink to={'history'}>
+        <NavLink to={'history'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['home']}</div>
         </NavLink>
-        <NavLink to={'history'}>
+        <NavLink to={'history'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['history']}</div>
         </NavLink>
-        <NavLink to={'tours'}>
+        <NavLink to={'tours'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['tours']}</div>
         </NavLink>
-        <NavLink to={'grapes'}>
+        <NavLink to={'grapes'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['grapes']}</div>
         </NavLink>
-        <NavLink to={'wines'}>
+        <NavLink to={'wines'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['wines']}</div>
         </NavLink>
         </div>

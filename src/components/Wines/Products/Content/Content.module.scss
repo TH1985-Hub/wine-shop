@@ -5,6 +5,7 @@
   max-width: 160px;
   height: 200px;
   perspective: 1000px;
+  border-radius: 17px;
 }
 
 .flipCardInner {
@@ -15,6 +16,7 @@
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 17px;
 }
 
 .flipCard:hover .flipCardInner {
@@ -27,26 +29,32 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border-radius: 17px;
 }
 
 .flipCardFront {
   background-color: #bbb;
   color: black;
+  display: flex;
 }
 
 .flipCardBack {
-  background-image: linear-gradient(to right, white, #3E5151);
+  //background-image: linear-gradient(to bottom, white, #0e1111);.
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
 
 .flipImg {
   width: 160px;
-
   max-width: 160px;
   height: 200px;
+  border-radius: 17px;
 }
-
+.type {
+  margin: 0;
+  background-color: #221F20;
+}
 @media screen and (max-width: 666px) {
   .flipImg {
     width: 325px;

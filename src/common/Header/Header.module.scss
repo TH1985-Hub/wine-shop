@@ -54,11 +54,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .btnWrapper {
   border-right: 2px solid grey;
   padding: 5px;
+}
+
+.btnWrapper:hover {
+  opacity: 0.5;
 }
 
 .shopBtn {
