@@ -1,18 +1,18 @@
 .img {
-  max-width: 325px;
+  max-width: 310px;
   max-height: 250px;
   object-fit: cover;
 }
 
 .card {
   margin-top: 10px;
-  padding: 0 15px;
   text-align: center;
-  font-family: arial;
   display: flex;
+  justify-content: center;
 }
 
 .descriptionBlock {
+  padding: 0 15px;
   max-width: 300px;
   max-height: 250px;
   background-color: whitesmoke;
@@ -32,13 +32,10 @@
 
 .description {
   margin: 0;
-  padding: 5px;
 }
 
 .btn {
-  border: none;
   outline: 0;
-  padding: 12px;
   color: white;
   background-color: #000;
   text-align: center;
@@ -55,6 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 5px;
   }
 
   .img {
@@ -63,11 +61,11 @@
 
   .descriptionBlock  {
     max-width: 396px;
-    border: none;
+    padding: 15px;
   }
 
   .btn {
     max-width: 396px;
-
+    width: 100%;
   }
 }

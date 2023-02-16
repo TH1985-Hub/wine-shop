@@ -6,7 +6,7 @@ function Content({ img, text }) {
         <div className={styles.flipCardInner}>
           <div className={styles.flipCardFront}>
             <img  className={styles.flipImg} src={img} alt='tours'  />
-            <p className={styles.type}>REd dry</p>
+            <p className={styles.type}>{text}</p>
           </div>
           <div className={styles.flipCardBack}>
             <p>JRAGHATSPANYAN</p>

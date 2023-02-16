@@ -2,91 +2,157 @@
   height: 75vh;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
 }
 
-.background {
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  img {
-    width: 250px;
-    height: 300px;
-  }
-}
-
-.left{
-  width: 35%;
-  display: flex;
-  justify-content: flex-end;
-  //background: rgb(149 165 124);
-  //background: linear-gradient(0deg, rgb(149 165 124) 50%, rgba(255,255,255,1) 50%);
-  background-image: linear-gradient(to bottom, white, rgb(149 165 124) );
-}
-
-.right {
-  width: 65%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-image: linear-gradient(to right, white, rgb(149 165 124) );
-  height: 75vh;
-}
-
-.title {
-  font-family: Bodoni\ 72, serif;
-  margin-bottom: 0;
+.left {
+  width: 100%;
 }
 
 .description {
-  border: 1px solid  rgb(98,152,152);
-  border-top: none;
-  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  background-color: transparent;
+  color: whitesmoke;
   width: 350px;
   height: 75vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 0 15px;
-  margin: 0;
+  padding: 0 25px;
+  margin-left: 25px;
+  //margin-left: auto;
+  //margin-right: auto;
+  //display: block;
 }
 
 .info {
   font-size: 16px;
-  font-family: Bodoni\ 72, serif;
   line-height: 1.4;
   border-bottom:  1px solid black;
   overflow: auto;
   height: 400px;
 }
 
-.info::-webkit-scrollbar{
-  display: none;
+.info::-webkit-scrollbar {
+  width: 2px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    height: 100%;
-  }
-
-  .left {
-    width: 100%;
-    justify-content: center;
-    background-image: linear-gradient(to right, white, rgb(149 165 124) );
-  }
-
-  .right {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .description {
-    margin-top: 15px;
-    border-top: 1px solid  rgb(98,152,152);
-  }
+.info::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
 }
 
+/* Handle */
+.info::-webkit-scrollbar-thumb {
+  background: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+//.container {
+//  height: 75vh;
+//  display: flex;
+//  align-items: center;
+//  flex-wrap: wrap;
+//  position: relative;
+//}
+//
+//.background {
+//  position: absolute;
+//  right: 0;
+//  top: 0;
+//
+//  img {
+//    width: 250px;
+//    height: 300px;
+//  }
+//}
+//
+//.left{
+//  width: 35%;
+//  display: flex;
+//  justify-content: flex-end;
+//  //background: rgb(149 165 124);
+//  //background: linear-gradient(0deg, rgb(149 165 124) 50%, rgba(255,255,255,1) 50%);
+//  background-image: linear-gradient(to bottom, white, rgb(149 165 124) );
+//}
+//
+//.right {
+//  width: 65%;
+//  display: flex;
+//  justify-content: flex-start;
+//  align-items: center;
+//  background-image: linear-gradient(to right, white, rgb(149 165 124) );
+//  height: 75vh;
+//}
+//
+//.title {
+//  margin-bottom: 0;
+//}
+//
+//.description {
+//  border: 1px solid  rgb(98,152,152);
+//  border-top: none;
+//  background-color: #ffffff;
+//  width: 350px;
+//  height: 75vh;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  flex-wrap: wrap;
+//  padding: 0 15px;
+//  margin: 0;
+//}
+//
+//.info {
+//  font-size: 16px;
+//  line-height: 1.4;
+//  border-bottom:  1px solid black;
+//  overflow: auto;
+//  height: 400px;
+//}
+//
+//.info::-webkit-scrollbar{
+//  display: none;
+//}
+//
+//@media screen and (max-width: 1200px) {
+//  .container {
+//    height: 100%;
+//  }
+//
+//  .left {
+//    width: 100%;
+//    justify-content: center;
+//    background-image: linear-gradient(to right, white, rgb(149 165 124) );
+//  }
+//
+//  .right {
+//    width: 100%;
+//    height: 100%;
+//    justify-content: center;
+//  }
+//
+//  .description {
+//    margin-top: 0;
+//    border: none;
+//    width: 100%;
+//    height: 100%;
+//    max-height: unset;
+//  }
+//
+//  .info {
+//    border-bottom: none;
+//    max-height: unset;
+//  }
+//}
+//
+//

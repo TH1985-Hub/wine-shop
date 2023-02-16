@@ -18,7 +18,7 @@ function App() {
   const [ isVisible, setIsVisible ] = useState(true);
 
   const open = useCallback(setOpened, [])
-  const [ lang, setLang ] = useState('en');
+  const [ lang, setLang ] = useState('am');
 
   useEffect(() => {
     setTimeout(() => {

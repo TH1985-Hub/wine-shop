@@ -16,19 +16,19 @@ function Tours({ lang }) {
       <div className={styles.left}>
         <Products setIsTours={setIsTours} />
       </div>
-    <div className={styles.right}>
-      <div className={styles.description}>
-        <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>
-        <p className={styles.info}>{texts[lang]['historyText']}</p>
+      <div className={styles.right}>
+        <div className={styles.description}>
+          <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>
+          <p className={styles.info}>{texts[lang]['historyText']}</p>
+        </div>
+        <Items
+          img={tours[isTours]['img']}
+          title={tours[isTours]['title']}
+          price={tours[isTours]['price']}
+          text={tours[isTours]['text']}
+          description={tours[isTours]['description']}
+        />
       </div>
-      <Items
-        img={tours[isTours]['img']}
-        title={tours[isTours]['title']}
-        price={tours[isTours]['price']}
-        text={tours[isTours]['text']}
-        description={tours[isTours]['description']}
-      />
-    </div>
     </div>
   );
 }

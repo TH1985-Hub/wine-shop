@@ -43,14 +43,22 @@ function History({ lang }) {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+        <Carousel images={images} />
         <div className={styles.description}>
           <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>
           <p className={styles.info}>{texts[lang]['historyText']}</p>
         </div>
       </div>
-      <div className={styles.right}>
-        <Carousel images={images} />
-      </div>
+
+      {/*<div className={styles.left}>*/}
+      {/*  <div className={styles.description}>*/}
+      {/*    <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>*/}
+      {/*    <p className={styles.info}>{texts[lang]['historyText']}</p>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
+      {/*<div className={styles.right}>*/}
+      {/*  <Carousel images={images} />*/}
+      {/*</div>*/}
     </div>
   );
 }

@@ -42,14 +42,14 @@ function Header({ setOpened, setLang }) {
             <NavLink to={'history'}>
               <img src={history} className={styles.shake} alt="grape" />
             </NavLink>
-            <NavLink to={'tours'}>
-              <img src={factory} className={styles.shake} alt="grape" />
-            </NavLink>
             <NavLink to={'grapes'}>
               <img src={grape} className={styles.shake} alt="grape" />
             </NavLink>
             <NavLink to={'wines'}>
               <img src={wine}  className={styles.shake} alt="grape" />
+            </NavLink>
+            <NavLink to={'tours'}>
+              <img src={factory} className={styles.shake} alt="grape" />
             </NavLink>
           </div>
           : <MenuIcon className={styles.icon} onClick={() => setOpened(true)} />

@@ -35,7 +35,6 @@
 .flipCardFront {
   background-color: #bbb;
   color: black;
-  display: flex;
 }
 
 .flipCardBack {
@@ -51,10 +50,15 @@
   height: 200px;
   border-radius: 17px;
 }
+
 .type {
   margin: 0;
   background-color: #221F20;
+  color: whitesmoke;
+  text-align: center;
+  border-radius: 17px;
 }
+
 @media screen and (max-width: 666px) {
   .flipImg {
     width: 325px;
