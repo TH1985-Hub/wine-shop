@@ -50,15 +50,18 @@ img {
 
 @media screen and (max-width: 1200px) {
   .carousel {
+    height: 55vh;
     margin-left: 0;
     width: 100%;
   }
 
   .btnPrev,
   .btnNext {
-    background-color: transparent;
+    height: 55vh;
+    background-color: whitesmoke;
     position: absolute;
     font-size: 15px;
+    opacity: 1;
   }
 
   .btnPrev {
@@ -67,5 +70,17 @@ img {
 
   .btnNext {
     right: 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .carousel {
+    margin-bottom: 50px;
+  }
+
+  .btnPrev,
+  .btnNext {
+    font-size: 20px;
+    padding: 0 8px;
   }
 }

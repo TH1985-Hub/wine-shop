@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 100vh;
   background: url('https://images.pexels.com/photos/2339180/pexels-photo-2339180.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -28,7 +29,7 @@
 
 .text:hover {
   transition: 0.7s;
-  background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 25.5%, transparent 40.25%);
+  color: whitesmoke;
 }
 
 .icon {

@@ -42,19 +42,4 @@ export const wines ={
     text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
     vol: '14.0',
   },
-  // 7: {
-  //   img: view,
-  //   title: 'Rosé Wine',
-  //   text: '7'
-  // },
-  // 8: {
-  //   img: view,
-  //   title: 'Rosé Wine',
-  //   text: '8'
-  // },
-  // 9: {
-  //   img: view,
-  //   title: 'Rosé Wine',
-  //   text: '9'
-  // },
 }

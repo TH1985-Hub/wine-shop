@@ -60,14 +60,35 @@
   overflow: auto;
   height: 400px;
 }
-
-.info::-webkit-scrollbar{
-  display: none;
+.info::-webkit-scrollbar {
+  width: 2px;
+  cursor: pointer;
 }
+
+.info::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
+}
+
+/* Handle */
+.info::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 10px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
 
 @media screen and (max-width: 1200px) {
   .container {
-    height: 100%;
+    height: 100vh;
   }
 
   .left {
@@ -78,7 +99,7 @@
 
   .right {
     width: 100%;
-    height: 100%;
+    height: unset;
     justify-content: center;
   }
 
@@ -91,6 +112,6 @@
 
   .info {
     border-bottom: none;
-    height: unset;
+    max-height: 500px;
   }
 }

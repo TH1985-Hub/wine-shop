@@ -11,9 +11,6 @@ function MobileNavMenu({ setOpened, lang }) {
         <CancelIcon className={styles.icon} onClick={() => setOpened(false)} />
         <div className={styles.sections}>
         <NavLink to={'history'} onClick={() => setOpened(false)}>
-          <div className={styles.text}>{texts[lang]['home']}</div>
-        </NavLink>
-        <NavLink to={'history'} onClick={() => setOpened(false)}>
           <div className={styles.text}>{texts[lang]['history']}</div>
         </NavLink>
         <NavLink to={'tours'} onClick={() => setOpened(false)}>
