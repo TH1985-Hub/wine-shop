@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { getIsTouchDevice } from '../../utils/getIsDeviceType';
+
 import styles from './Carousel.module.scss'
+import cx from 'classnames';
 
 function Carousel({ images }) {
   const [index, setIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+  const isTouchDevice = getIsTouchDevice();
 
   const handlePrev = () => {
     setIndex((index + images.length - 1) % images.length);
@@ -12,14 +18,28 @@ function Carousel({ images }) {
     setIndex((index + 1) % images.length);
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+    if (touchStartX.current - touchEndX.current > 50) {
+      handleNext();
+    } else if (touchEndX.current - touchStartX.current > 50) {
+      handlePrev();
+    }
+  };
 
   return (
-    <div className={styles.carousel}>
-      <button className={styles.btnPrev} onClick={handlePrev}>
+    <div className={styles.carousel}
+         onTouchStart={handleTouchStart}
+         onTouchEnd={handleTouchEnd}>
+      <button className={cx(styles.btnPrev,{ [styles.btnPrevHidden]: isTouchDevice,})} onClick={handlePrev}>
         &lt;
       </button>
       <img src={images[index].src} alt={images[index].alt} className={styles.img} />
-      <button className={styles.btnNext} onClick={handleNext}>
+      <button className={cx(styles.btnNext,{ [styles.btnNextHidden]: isTouchDevice,})} onClick={handleNext}>
         &gt;
       </button>
     </div>

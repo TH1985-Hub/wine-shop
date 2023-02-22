@@ -27,10 +27,18 @@ img {
 
 .btnPrev {
   left: 0px;
+
+  &Hidden {
+    display: none;
+  }
 }
 
 .btnNext {
   right: 0px;
+
+  &Hidden {
+    display: none;
+  }
 }
 
 .carousel:hover .btnPrev {
@@ -75,7 +83,6 @@ img {
 
 @media screen and (max-width: 786px) {
   .carousel {
-    margin-bottom: 50px;
   }
 
   .btnPrev,
