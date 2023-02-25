@@ -33,7 +33,6 @@ function App() {
        <>
          <Header setOpened={open} setLang={setLang} />
          <div>
-
              <Routes>
                <Route index element={<Home lang={lang}/>}/>
                <Route path='/tours' element={<Tours lang={lang}/>}/>
@@ -43,7 +42,6 @@ function App() {
                <Route path='/payment' element={<Payment />}/>
                <Route path='*' element={<Navigate to="/"/>}/>
              </Routes>
-
          </div>
          <Footer />
        </>

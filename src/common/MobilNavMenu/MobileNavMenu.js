@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import CancelIcon from '@mui/icons-material/Cancel';
 import styles from './MobileNavMenu.module.scss';
 import { texts } from '../../common/texts/texts';
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function MobileNavMenu({ setOpened, lang }) {
 
@@ -23,7 +27,14 @@ function MobileNavMenu({ setOpened, lang }) {
           <div className={styles.text}>{texts[lang]['wines']}</div>
         </NavLink>
         </div>
+        <div className={styles.mobileFooter}>
+          <CallIcon />
+          <EmailIcon />
+          <InstagramIcon />
+          <FacebookIcon />
+        </div>
       </div>
+
   );
 }
 

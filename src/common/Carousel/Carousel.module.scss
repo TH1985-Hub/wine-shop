@@ -14,15 +14,20 @@ img {
 
 .btnPrev,
 .btnNext {
-  font-size: 15px;
-  cursor: pointer;
-  height: 75vh;
-  background-color: rgb(210, 217, 210);
-  opacity: 0;
-  color: black;
-  border: none;
-  transition: opacity 1s;
   position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  color: whitesmoke;
+  background-color: transparent;
+  border-color: whitesmoke;
+  border-radius: 50%;
+  user-select: none;
+  transition: opacity 1s;
+  padding: 8px 16px;
+  text-decoration: none;
+  opacity: 0;
+  margin: 0 5px;
+  font-size: 15px;
 }
 
 .btnPrev {
@@ -55,7 +60,6 @@ img {
   object-fit: cover;
 }
 
-
 @media screen and (max-width: 1200px) {
   .carousel {
     height: 55vh;
@@ -65,10 +69,6 @@ img {
 
   .btnPrev,
   .btnNext {
-    height: 55vh;
-    background-color: whitesmoke;
-    position: absolute;
-    font-size: 15px;
     opacity: 1;
   }
 

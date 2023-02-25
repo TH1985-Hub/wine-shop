@@ -38,7 +38,6 @@
 }
 
 .flipCardBack {
-  //background-image: linear-gradient(to bottom, white, #0e1111);.
   background-color: black;
   color: white;
   transform: rotateY(180deg);
@@ -62,10 +61,13 @@
 @media screen and (max-width: 666px) {
   .flipImg {
     width: 325px;
-
     max-width: 325px;
     height: 300px;
     object-fit: cover;
+  }
+
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(0deg);
   }
 
   .flipCard {

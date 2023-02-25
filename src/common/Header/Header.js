@@ -37,7 +37,7 @@ function Header({ setOpened, setLang }) {
         <Logo className={styles.logo} />
       </NavLink>
       <div className={styles.leftPart}>
-        { !isMobileOrLaptop ?
+        { !isMobileOrLaptop &&
           <div className={styles.sections}>
             <NavLink to={'history'}>
               <img src={history} className={styles.shake} alt="grape" />
@@ -52,21 +52,24 @@ function Header({ setOpened, setLang }) {
               <img src={factory} className={styles.shake} alt="grape" />
             </NavLink>
           </div>
-          : <MenuIcon className={styles.icon} onClick={() => setOpened(true)} />
         }
         </div>
-      { !isMobileOrLaptop &&
         <div className={styles.wrapper}>
-          <NavLink to={'payment'}>
-            <div className={styles.btnWrapper}><div className={styles.shopBtn}>Buy Tours</div></div>
-          </NavLink>
+          {!isMobileOrLaptop ?
+            <NavLink to={'payment'}>
+              <div className={styles.btnWrapper}>
+                <div className={styles.shopBtn}>Buy Tours</div>
+              </div>
+            </NavLink>
+            :
+            <MenuIcon className={styles.icon} onClick={() => setOpened(true)}/>
+          }
           <div className={styles.languages}>
             <span onClick={changeLangEn}>EN</span>
             <span onClick={changeLangRu}>RU</span>
             <span onClick={changeLangAm}>AM</span>
           </div>
         </div>
-      }
     </div>
   );
 }

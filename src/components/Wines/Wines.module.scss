@@ -1,5 +1,5 @@
 .container {
-  height: 75vh;
+  //height: 75vh;
   overflow: hidden;
   background-image: linear-gradient(to right, #DECBA4, #3E5151);
   display: flex;
@@ -21,7 +21,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  //height: 75vh;
 }
 
 .imgContainer {
@@ -61,6 +61,10 @@
     overflow: auto;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .title {
+    opacity: 1;
   }
 
   .left {

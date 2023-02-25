@@ -33,6 +33,7 @@
 }
 
 .logo {
+  user-select: none;
   width: 94px;
 }
 
@@ -47,6 +48,7 @@
 
 .icon {
   font-size: 3.5rem !important;
+  border-right: 2px solid grey;
 }
 
 .wrapper {

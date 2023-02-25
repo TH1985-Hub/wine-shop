@@ -1,23 +1,22 @@
-.container {
-}
-
 .row {
   display: flex;
   gap: 20px;
 }
+
 @media screen and (max-width: 1200px) {
   .row {
     gap: 100px;
   }
+
+  .row:last-child {
+    margin-bottom: 45px;
+  }
 }
 
 @media screen and (max-width: 666px) {
-  .container {
-
-  }
-
   .row {
     max-width: 396px;
     flex-direction: column;
+    gap: 0;
   }
 }

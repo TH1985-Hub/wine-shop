@@ -10,17 +10,17 @@ import styles from './Tours.module.scss';
 
 function Tours({ lang }) {
   const [isTours, setIsTours] = useState('1');
-  console.log(tours[lang][isTours]['title'])
+
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <Products setIsTours={setIsTours} lang={lang} />
       </div>
       <div className={styles.right}>
-        <div className={styles.description}>
-          <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>
-          <p className={styles.info}>{texts[lang]['historyText']}</p>
-        </div>
+        {/*<div className={styles.description}>*/}
+        {/*  <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>*/}
+        {/*  <p className={styles.info}>{texts[lang]['historyText']}</p>*/}
+        {/*</div>*/}
         <Items
           img={tours[lang][isTours]['img']}
           title={tours[lang][isTours]['title']}

@@ -21,8 +21,6 @@
   width: 35%;
   display: flex;
   justify-content: flex-end;
-  //background: rgb(149 165 124);
-  //background: linear-gradient(0deg, rgb(149 165 124) 50%, rgba(255,255,255,1) 50%);
   background-image: linear-gradient(to bottom, white, rgb(149 165 124) );
 }
 
@@ -56,7 +54,6 @@
 .info {
   font-size: 16px;
   line-height: 1.4;
-  border-bottom:  1px solid black;
   overflow: auto;
   height: 400px;
 }
