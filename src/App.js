@@ -1,7 +1,6 @@
-import React, {useCallback, useEffect, useState} from 'react';
-import {Route, Routes, Navigate } from "react-router-dom";
-import './App.module.scss';
-import styles from './App.module.scss';
+import React, { useCallback, useEffect, useState } from 'react';
+import { Route, Routes, Navigate } from "react-router-dom";
+
 import Home from './components/Home/Home';
 import Header from './common/Header/Header';
 import Footer from './common/Footer/Footer';
@@ -12,6 +11,9 @@ import Wines from './components/Wines/Wines';
 import Grapes from './components/Grapes/Grapes';
 import Loader from './common/Loader/Loader';
 import Payment from './components/Payment/Payment';
+
+import './App.module.scss';
+import styles from './App.module.scss';
 
 function App() {
   const [ opened, setOpened ] = useState(false);

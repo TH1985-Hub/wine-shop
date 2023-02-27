@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import video from './video/homeVideo.mp4'
 import { texts } from '../../common/texts/texts';
+
+import video from './video/homeVideo.mp4'
 
 import styles from './Home.module.scss';
 

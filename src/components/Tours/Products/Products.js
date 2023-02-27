@@ -1,11 +1,14 @@
+import Content from '../../Wines/Products/Content/Content';
+
+import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
+import { tours } from '../../../common/toursTypes/texts'
+
 import tour3 from './img/tour1.jpg';
 import tour2 from './img/tour2.jpg';
 import tour1 from './img/tour3.jpg';
 import tour from './img/tour.jpg';
+
 import styles from './Products.module.scss';
-import Content from '../../Wines/Products/Content/Content';
-import { tours } from '../../../common/toursTypes/texts'
-import {getIsTouchDevice} from '../../../utils/getIsDeviceType';
 
 function Products({ setIsTours, lang }) {
   const isTouchDevice = getIsTouchDevice();

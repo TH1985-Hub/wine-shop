@@ -1,10 +1,12 @@
 import Carousel from '../../common/Carousel/Carousel';
+
 import history from './img/his.jpg';
 import history1 from './img/his1.jpg';
 import history2 from './img/his2.jpg';
-import grape from  './img/grape.svg'
-import styles from './Grapes.module.scss';
+
 import { texts } from '../../common/texts/texts';
+
+import styles from './Grapes.module.scss';
 
 function Grapes({ lang }) {
   const images = [
@@ -24,8 +26,6 @@ function Grapes({ lang }) {
 
   return (
     <div className={styles.container}>
-      {/*<div className={styles.background}><img src={grape} alt="grape"/></div>*/}
-
       <div className={styles.left}>
         <div className={styles.description}>
           <h1 className={styles.title}>{texts[lang]['grapesTitle']}</h1>

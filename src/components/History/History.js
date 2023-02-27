@@ -1,6 +1,4 @@
 import Carousel from '../../common/Carousel/Carousel';
-import { useState } from 'react';
-
 import { texts } from '../../common/texts/texts';
 
 import pic1 from './img/his1.jpg';
@@ -8,6 +6,7 @@ import pic2 from './img/his2.jpg';
 import pic3 from './img/his3.jpg';
 import pic4 from './img/his4.jpg';
 import pic5 from './img/his5.jpg';
+
 import pic6 from './img/his6.jpg';
 import styles from './History.module.scss';
 

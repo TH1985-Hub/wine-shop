@@ -1,5 +1,5 @@
 import Content from './Content/Content';
-import {getIsTouchDevice} from '../../../utils/getIsDeviceType';
+import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
 
 import garanDmak from './img/garanDmak.jpg';
 import redDry from './img/redDry.jpg';

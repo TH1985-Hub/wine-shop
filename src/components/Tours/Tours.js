@@ -1,9 +1,8 @@
-import  {useState } from 'react';
+import  { useState } from 'react';
 
 import Items from './Items/Items';
 import Products from './Products/Products';
 
-import { texts } from '../../common/texts/texts';
 import { tours } from '../../common/toursTypes/texts';
 
 import styles from './Tours.module.scss';
