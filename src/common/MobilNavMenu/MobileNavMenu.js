@@ -1,14 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import CancelIcon from '@mui/icons-material/Cancel';
-import styles from './MobileNavMenu.module.scss';
 import { texts } from '../../common/texts/texts';
+import privacyPDF from '../Files/policy.pdf';
+
+import CancelIcon from '@mui/icons-material/Cancel';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
+
 import FacebookIcon from '@mui/icons-material/Facebook';
+import styles from './MobileNavMenu.module.scss';
 
 function MobileNavMenu({ setOpened, lang }) {
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+  }, [])
 
   return (
       <div className={styles.container}>
@@ -32,6 +43,7 @@ function MobileNavMenu({ setOpened, lang }) {
           <EmailIcon />
           <InstagramIcon />
           <FacebookIcon />
+          <a className={styles.privacy} href={privacyPDF} target="_blank" rel="noreferrer">| Privacy and Policy</a>
         </div>
       </div>
 

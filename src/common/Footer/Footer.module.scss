@@ -19,6 +19,15 @@
   }
 }
 
+.privacy {
+  text-decoration: none;
+  color: black;
+}
+
+.privacy:hover {
+  color: #1a71ad;
+}
+
 @media screen and (max-width: 1200px) {
   .footer {
    display: none;

@@ -32,18 +32,10 @@ img {
 
 .btnPrev {
   left: 0px;
-
-  &Hidden {
-    display: none;
-  }
 }
 
 .btnNext {
   right: 0px;
-
-  &Hidden {
-    display: none;
-  }
 }
 
 .carousel:hover .btnPrev {

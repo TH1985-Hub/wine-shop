@@ -6,6 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
+import privacyPDF from '../../common/Files/policy.pdf'
 import styles from './Footer.module.scss';
 import cx from 'classnames';
 
@@ -19,6 +20,7 @@ function Footer() {
       <EmailIcon />
       <InstagramIcon />
       <FacebookIcon />
+      <a className={styles.privacy} href={privacyPDF} target="_blank" rel="noreferrer">| Privacy and Policy</a>
     </div>
   );
 }

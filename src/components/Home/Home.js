@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { texts } from '../../common/texts/texts';
 
 import video from './video/homeVideo.mp4'
 
 import styles from './Home.module.scss';
+import Loader from '../../common/Loader/Loader';
 
 function Home({ lang }) {
+  const [ isVisible, setIsVisible ] = useState(true);
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = 'auto';
+    }
+  }, [])
+
+  function loaded() {
+    setIsVisible(false)
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.after}></div>
-      <video src={video} className={styles.video} autoPlay loop playsInline muted />
-      <>
+      { isVisible  && <Loader /> }
+      <div className={!isVisible ? styles.hidden : undefined}>
+        <video onLoadedData={loaded} className={styles.video} src="https://d2dyoi7emzmazg.cloudfront.net/homeVideo.mp4" autoPlay loop playsInline muted/>
         <div className={styles.sections}>
           <NavLink to='history' className={styles.navLink}>
             <div className={styles.text}>{texts[lang]['home']}</div>
@@ -29,7 +45,7 @@ function Home({ lang }) {
             <div className={styles.text}>{texts[lang]['wines']}</div>
           </NavLink>
         </div>
-      </>
+      </div>
     </div>
   );
 }

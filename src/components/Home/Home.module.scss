@@ -6,6 +6,10 @@
   justify-content: center;
 }
 
+.hidden {
+  height: 0;
+}
+
 .navLink {
   text-decoration: none;
 }
@@ -39,6 +43,7 @@
   opacity: 0.3;
   transition: opacity 1s;
   left: 0;
+  top: 0;
   gap: 50px;
   display: flex;
   flex-direction: column;

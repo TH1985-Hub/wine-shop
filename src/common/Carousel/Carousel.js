@@ -35,11 +35,11 @@ function Carousel({ images }) {
     <div className={styles.carousel}
          onTouchStart={handleTouchStart}
          onTouchEnd={handleTouchEnd}>
-      <button className={cx(styles.btnPrev,{ [styles.btnPrevHidden]: isTouchDevice,})} onClick={handlePrev}>
+      <button className={styles.btnPrev} onClick={handlePrev}>
         &#8249;
       </button>
       <img src={images[index].src} alt={images[index].alt} className={styles.img} />
-      <button className={cx(styles.btnNext,{ [styles.btnNextHidden]: isTouchDevice,})} onClick={handleNext}>
+      <button className={styles.btnNext} onClick={handleNext}>
         &#8250;
       </button>
     </div>
