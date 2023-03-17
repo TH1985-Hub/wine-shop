@@ -98,6 +98,12 @@
   }
 }
 
+@media screen and (max-width: 786px) {
+  .left {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 666px) {
   .container {
     background-image: none;

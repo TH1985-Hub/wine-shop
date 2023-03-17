@@ -14,6 +14,22 @@
   gap: 10px;
   z-index: 1000;
 
+  a {
+    height: 24px ;
+  }
+
+  a:visited {
+    color: black;
+  }
+
+  a:active {
+    color: black;
+  }
+
+  a:link  {
+    color: black;
+  }
+
   &Disable {
     display: none;
   }

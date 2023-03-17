@@ -4,6 +4,10 @@ import reserveDry from '../../components/Wines/Products/img/reserveDry.jpg';
 import roseDry from '../../components/Wines/Products/img/roseDry.jpg';
 import tigraniSpecial from '../../components/Wines/Products/img/tigraniSpecial.jpg';
 import whiteDry from '../../components/Wines/Products/img/whiteDry.jpg';
+import bambak1 from '../../components/Wines/Products/img/bambak1.jpg';
+import bambak2 from '../../components/Wines/Products/img/bambak2.jpg';
+import bambak3 from '../../components/Wines/Products/img/bambak3.jpg';
+import bambak4 from '../../components/Wines/Products/img/bambak4.jpg';
 
 export const wines ={
   1: {
@@ -42,4 +46,28 @@ export const wines ={
     text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
     vol: '14.0',
   },
+  7: {
+    img: bambak1,
+    title: 'BAMBAK ROSE DRY',
+    text: 'Full-bodied, with tones of tropical fruits barberry and strawberries, harmonious taste with tones of grapefruit, barberry and strawberries. Long aftertaste with sweet and harmonious notes.',
+    vol: '14.9',
+  },
+  8: {
+    img: bambak2,
+    title: 'BAMBAK RED DRY',
+    text: 'Full-bodied, berries and floral tones with pronounced aromas of black currant, cherry, roses and spices enriched with the full-bodied, fruity, balanced and velvet tannic taste. Delicate, long aftertaste.',
+    vol: '13.4',
+  },
+  9: {
+    img: bambak3,
+    title: 'BAMBAK WHITE DRY',
+    text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
+    vol: '14.2',
+  },
+  // 10: {
+  //   img: bambak4,
+  //   title: 'WHITE DRY',
+  //   text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
+  //   vol: '14.0',
+  // },
 }

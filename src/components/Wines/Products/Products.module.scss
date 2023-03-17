@@ -13,6 +13,12 @@
   }
 }
 
+@media screen and (max-width: 786px) {
+  .container {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 666px) {
   .row {
     max-width: 396px;

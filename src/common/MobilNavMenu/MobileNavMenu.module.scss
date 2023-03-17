@@ -57,7 +57,25 @@
   padding: 0 35px;
   gap: 10px;
   z-index: 1000;
+
+  a {
+    height: 24px ;
+  }
+
+  a:visited {
+    color: wheat;
+  }
+
+  a:active {
+    color: wheat;
+  }
+
+  a:link  {
+    color: wheat;
+  }
+
 }
+
 
 .privacy {
   text-decoration: none;

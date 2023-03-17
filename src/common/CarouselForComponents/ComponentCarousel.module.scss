@@ -1,0 +1,88 @@
+.carousel {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.btnPrev,
+.btnNext {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+  color: #312f2f;
+  background-color: transparent;
+  border-color: #312f2f;
+  border-radius: 50%;
+  user-select: none;
+  transition: opacity 1s;
+  padding: 8px 16px;
+  text-decoration: none;
+  opacity: 0;
+  margin: 0 5px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btnPrev {
+  left: 0px;
+  margin-left: 10px;
+}
+
+.btnNext {
+  right: 0px;
+  margin-right: 10px;
+}
+
+.carousel:hover .btnPrev {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.carousel:hover .btnNext {
+  transition: opacity 1s;
+  opacity: 1;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel {
+    height: 55vh;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .btnPrev,
+  .btnNext {
+    opacity: 1;
+  }
+
+  .btnPrev {
+    left: 0;
+  }
+
+  .btnNext {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .carousel {
+  }
+
+  .btnPrev,
+  .btnNext {
+    font-size: 22px;
+    padding: 0 9px;
+  }
+}
