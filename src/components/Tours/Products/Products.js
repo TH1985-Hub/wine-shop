@@ -3,21 +3,15 @@ import Content from '../../Wines/Products/Content/Content';
 import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
 import { tours } from '../../../common/toursTypes/texts'
 
-import tour3 from './img/tour1.jpg';
-import tour2 from './img/tour2.jpg';
-import tour1 from './img/tour3.jpg';
-import tour from './img/tour.jpg';
-
 import styles from './Products.module.scss';
 import ComponentCarousel from '../../../common/CarouselForComponents/ComponentCarousel';
-import pic1 from '../../History/img/his1.jpg';
-import pic2 from '../../History/img/his2.jpg';
-import pic3 from '../../History/img/his3.jpg';
-import pic4 from '../../History/img/his4.jpg';
-import pic5 from '../../History/img/his5.jpg';
-import pic6 from '../../History/img/his6.jpg';
 
 function Products({ setIsTours, lang }) {
+  const tour = 'https://wine85.s3.eu-central-1.amazonaws.com/tour.jpg'
+  const tour1 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour1.jpg'
+  const tour2 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour2.jpg'
+  const tour3 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour3.jpg'
+
   const isTouchDevice = getIsTouchDevice();
   const isMobileSize = window.innerWidth < 786;
 

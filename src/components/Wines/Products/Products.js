@@ -1,21 +1,21 @@
 import Content from './Content/Content';
 import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
 
-import garanDmak from './img/garanDmak.jpg';
-import redDry from './img/redDry.jpg';
-import reserveDry from './img/reserveDry.jpg';
-import roseDry from './img/roseDry.jpg';
-import tigraniSpecial from './img/tigraniSpecial.jpg';
-import whiteDry from './img/whiteDry.jpg'
-import bambak1 from './img/bambak1.jpg'
-import bambak2 from './img/bambak2.jpg'
-import bambak3 from './img/bambak3.jpg'
-import bambak4 from './img/bambak4.jpg'
-
 import styles from './Products.module.scss';
 import ComponentCarousel from '../../../common/CarouselForComponents/ComponentCarousel';
 
 function Products({setIsWine}) {
+  const garanDmak = 'https://wine85.s3.eu-central-1.amazonaws.com/garanDmak.jpg';
+  const redDry = 'https://wine85.s3.eu-central-1.amazonaws.com/redDry.jpg';
+  const reserveDry = 'https://wine85.s3.eu-central-1.amazonaws.com/reserveDry.jpg';
+  const roseDry = 'https://wine85.s3.eu-central-1.amazonaws.com/roseDry.jpg';
+  const tigraniSpecial = 'https://wine85.s3.eu-central-1.amazonaws.com/tigraniSpecial.jpg';
+  const whiteDry = 'https://wine85.s3.eu-central-1.amazonaws.com/whiteDry.jpg';
+  const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
+  const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
+  const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
+  // const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
+
   const isTouchDevice = getIsTouchDevice();
   const isMobileSize = window.innerWidth < 786;
 
@@ -29,7 +29,7 @@ function Products({setIsWine}) {
     <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>,
     <div onClick={()=> setWine('8')}><Content img={bambak2} /></div>,
     <div onClick={()=> setWine('9')}><Content img={bambak3} /></div>,
-    <div onClick={()=> setWine('10')}><Content img={bambak4} /></div>,
+    // <div onClick={()=> setWine('10')}><Content img={bambak4} /></div>,
   ]
 
   function setWine(ev) {

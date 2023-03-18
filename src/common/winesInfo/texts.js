@@ -1,13 +1,13 @@
-import garanDmak from '../../components/Wines/Products/img/garanDmak.jpg';
-import redDry from '../../components/Wines/Products/img/redDry.jpg';
-import reserveDry from '../../components/Wines/Products/img/reserveDry.jpg';
-import roseDry from '../../components/Wines/Products/img/roseDry.jpg';
-import tigraniSpecial from '../../components/Wines/Products/img/tigraniSpecial.jpg';
-import whiteDry from '../../components/Wines/Products/img/whiteDry.jpg';
-import bambak1 from '../../components/Wines/Products/img/bambak1.jpg';
-import bambak2 from '../../components/Wines/Products/img/bambak2.jpg';
-import bambak3 from '../../components/Wines/Products/img/bambak3.jpg';
-import bambak4 from '../../components/Wines/Products/img/bambak4.jpg';
+const garanDmak = 'https://wine85.s3.eu-central-1.amazonaws.com/garanDmak.jpg';
+const redDry = 'https://wine85.s3.eu-central-1.amazonaws.com/redDry.jpg';
+const reserveDry = 'https://wine85.s3.eu-central-1.amazonaws.com/reserveDry.jpg';
+const roseDry = 'https://wine85.s3.eu-central-1.amazonaws.com/roseDry.jpg';
+const tigraniSpecial = 'https://wine85.s3.eu-central-1.amazonaws.com/tigraniSpecial.jpg';
+const whiteDry = 'https://wine85.s3.eu-central-1.amazonaws.com/whiteDry.jpg';
+const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
+const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
+const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
+// const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
 
 export const wines ={
   1: {

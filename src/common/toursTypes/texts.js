@@ -1,7 +1,7 @@
-import tour3 from './toursImages/tour1.jpg';
-import tour2 from './toursImages/tour2.jpg';
-import tour1 from './toursImages/tour3.jpg';
-import tour from './toursImages/tour.jpg';
+const tour = 'https://wine85.s3.eu-central-1.amazonaws.com/tour.jpg';
+const tour1 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour1.jpg';
+const tour2 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour2.jpg';
+const tour3 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour3.jpg';
 
 export const tours = {
   en: {

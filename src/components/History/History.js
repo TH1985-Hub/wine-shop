@@ -1,40 +1,33 @@
 import Carousel from '../../common/Carousel/Carousel';
 import { texts } from '../../common/texts/texts';
 
-import pic1 from './img/his1.jpg';
-import pic2 from './img/his2.jpg';
-import pic3 from './img/his3.jpg';
-import pic4 from './img/his4.jpg';
-import pic5 from './img/his5.jpg';
-
-import pic6 from './img/his6.jpg';
 import styles from './History.module.scss';
 
 function History({ lang }) {
 
   const images = [
     {
-      src: pic1,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist1.jpg',
       alt: "Image 1"
     },
     {
-      src: pic2,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist2.jpg',
       alt: "Image 2"
     },
     {
-      src: pic3,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist3.jpg',
       alt: "Image 3"
     },
     {
-      src: pic4,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist4.jpg',
       alt: "Image 4"
     },
     {
-      src: pic5,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist5.jpg',
       alt: "Image 5"
     },
     {
-      src: pic6,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist6.jpg',
       alt: "Image 6"
     }
   ];
@@ -47,18 +40,7 @@ function History({ lang }) {
           <p className={styles.info}>{texts[lang]['historyText']}</p>
         </div>
         <Carousel images={images} />
-
       </div>
-
-      {/*<div className={styles.left}>*/}
-      {/*  <div className={styles.description}>*/}
-      {/*    <h1 className={styles.title}>{texts[lang]['historyTitle']}</h1>*/}
-      {/*    <p className={styles.info}>{texts[lang]['historyText']}</p>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-      {/*<div className={styles.right}>*/}
-      {/*  <Carousel images={images} />*/}
-      {/*</div>*/}
     </div>
   );
 }

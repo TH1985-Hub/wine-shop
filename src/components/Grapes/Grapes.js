@@ -11,15 +11,15 @@ import styles from './Grapes.module.scss';
 function Grapes({ lang }) {
   const images = [
     {
-      src: history,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/his1.jpg',
       alt: "Image 1"
     },
     {
-      src: history1,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/his.jpg',
       alt: "Image 2"
     },
     {
-      src: history2,
+      src: 'https://wine85.s3.eu-central-1.amazonaws.com/his2.jpg',
       alt: "Image 3"
     }
   ];
