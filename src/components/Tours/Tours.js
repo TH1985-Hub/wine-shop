@@ -3,7 +3,7 @@ import  { useState } from 'react';
 import Items from './Items/Items';
 import Products from './Products/Products';
 
-import { tours } from '../../common/toursTypes/texts';
+// import { tours } from '../../common/toursTypes/texts';
 
 import styles from './Tours.module.scss';
 
@@ -21,11 +21,8 @@ function Tours({ lang }) {
         {/*  <p className={styles.info}>{texts[lang]['historyText']}</p>*/}
         {/*</div>*/}
         <Items
-          img={tours[lang][isTours]['img']}
-          title={tours[lang][isTours]['title']}
-          price={tours[lang][isTours]['price']}
-          text={tours[lang][isTours]['text']}
-          description={tours[lang][isTours]['description']}
+          isTours={isTours}
+          lang={lang}
         />
       </div>
     </div>

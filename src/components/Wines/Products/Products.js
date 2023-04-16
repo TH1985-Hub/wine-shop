@@ -11,9 +11,9 @@ function Products({setIsWine}) {
   const roseDry = 'https://wine85.s3.eu-central-1.amazonaws.com/roseDry.jpg';
   const tigraniSpecial = 'https://wine85.s3.eu-central-1.amazonaws.com/tigraniSpecial.jpg';
   const whiteDry = 'https://wine85.s3.eu-central-1.amazonaws.com/whiteDry.jpg';
-  const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
-  const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
-  const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
+  // const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
+  // const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
+  // const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
   // const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
 
   const isTouchDevice = getIsTouchDevice();
@@ -26,9 +26,9 @@ function Products({setIsWine}) {
     <div onClick={()=> setWine('4')}><Content img={roseDry} /></div>,
     <div onClick={()=> setWine('5')}><Content img={tigraniSpecial} /></div>,
     <div onClick={()=> setWine('6')}><Content img={whiteDry} /></div>,
-    <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>,
-    <div onClick={()=> setWine('8')}><Content img={bambak2} /></div>,
-    <div onClick={()=> setWine('9')}><Content img={bambak3} /></div>,
+    // <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>,
+    // <div onClick={()=> setWine('8')}><Content img={bambak2} /></div>,
+    // <div onClick={()=> setWine('9')}><Content img={bambak3} /></div>,
     // <div onClick={()=> setWine('10')}><Content img={bambak4} /></div>,
   ]
 
@@ -51,14 +51,15 @@ function Products({setIsWine}) {
           </div>
           <div className={styles.row}>
             <div onClick={()=> setWine('4')}><Content img={roseDry} /></div>
+            <div onClick={()=> setWine('3')}><Content img={reserveDry} /></div>
             <div onClick={()=> setWine('5')}><Content img={tigraniSpecial} /></div>
-            <div onClick={()=> setWine('8')}><Content img={bambak2} /></div>
+            {/*<div onClick={()=> setWine('8')}><Content img={bambak2} /></div>*/}
             {/*<div onClick={()=> setWine('10')}><Content img={bambak4} /></div>*/}
           </div>
           <div className={styles.row}>
-            <div onClick={()=> setWine('3')}><Content img={reserveDry} /></div>
-            <div onClick={()=> setWine('9')}><Content img={bambak3} /></div>
-            <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>
+            {/*<div onClick={()=> setWine('3')}><Content img={reserveDry} /></div>*/}
+            {/*<div onClick={()=> setWine('9')}><Content img={bambak3} /></div>*/}
+            {/*<div onClick={()=> setWine('7')}><Content img={bambak1} /></div>*/}
           </div>
         </>
       }

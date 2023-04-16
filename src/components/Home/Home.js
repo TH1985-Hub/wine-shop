@@ -6,8 +6,9 @@ import video from './video/homeVideo.mp4'
 
 import styles from './Home.module.scss';
 import Loader from '../../common/Loader/Loader';
+import AgeVerification from '../../common/AgeVerification/AgeVerification';
 
-function Home({ lang }) {
+function Home({ lang, setLang }) {
   const [ isVisible, setIsVisible ] = useState(true);
 
   useEffect(() => {
@@ -22,9 +23,20 @@ function Home({ lang }) {
     setIsVisible(false)
   }
 
+  function changeLangRu() {
+    setLang('ru');
+  }
+  function changeLangEn() {
+    setLang('en');
+  }
+  function changeLangAm() {
+    setLang('am');
+  }
+
   return (
     <div className={styles.container}>
       <div className={styles.after}></div>
+      <AgeVerification />
       { isVisible  && <Loader /> }
       <div className={!isVisible ? styles.hidden : undefined}>
         <video onLoadedData={loaded} className={styles.video} src="https://d2dyoi7emzmazg.cloudfront.net/homeVideo.mp4" autoPlay loop playsInline muted/>
@@ -44,6 +56,11 @@ function Home({ lang }) {
           <NavLink to='wines' className={styles.navLink}>
             <div className={styles.text}>{texts[lang]['wines']}</div>
           </NavLink>
+          <div className={styles.languages}>
+            <span onClick={changeLangEn}>EN</span>|
+            <span onClick={changeLangRu}>RU</span>|
+            <span onClick={changeLangAm}>AM</span>
+          </div>
         </div>
       </div>
     </div>

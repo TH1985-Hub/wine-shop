@@ -1,6 +1,6 @@
 export const texts = {
   am: {
-    'home': 'Հիմնական',
+    'home': 'Գլխավոր',
     'tours': 'Տուրիզմ',
     'history': 'Պատմություն',
     'wines': 'Գինիներ',

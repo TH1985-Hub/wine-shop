@@ -1,10 +1,16 @@
 .container {
-  //height: 75vh;
+  height: 75vh;
   overflow: hidden;
   background-image: linear-gradient(to right, #DECBA4, #3E5151);
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.show {
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: underline;
 }
 
 .description {

@@ -1,6 +1,6 @@
 .img {
   max-width: 310px;
-  max-height: 250px;
+  max-height: 281px;
   object-fit: cover;
 }
 
@@ -8,12 +8,16 @@
   text-align: center;
   display: flex;
   justify-content: center;
+
+  a{
+    background-color: #000;
+  }
 }
 
 .descriptionBlock {
   padding: 0 15px 5px;
   max-width: 360px;
-  max-height: 250px;
+  //max-height: 250px;
   background-color: whitesmoke;
 }
 
@@ -60,7 +64,7 @@
 
   .descriptionBlock  {
     max-width: 396px;
-    padding: 15px;
+    padding: 0;
   }
 
   .btn {

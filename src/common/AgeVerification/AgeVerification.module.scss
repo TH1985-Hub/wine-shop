@@ -1,0 +1,72 @@
+.ageVerificationModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 14;
+
+  &Disable {
+    display: none;
+  }
+}
+
+.ageVerificationModal {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.ageVerificationModal {
+  span {
+    display: inline-block;
+    height: 1px;
+    background-color: #9f9173;
+    vertical-align: middle;
+    width: 34px;
+    color: #9f9173;
+    margin: 0 10px;
+  }
+
+  h2 {
+    color: #9f9173;
+  }
+}
+
+.question {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+.text {
+  color: #000000;
+}
+
+.warning {
+  color: #9f9173;
+
+}
+
+.ageVerificationButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ageVerificationButtons button {
+  background-color: #9f9173;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+

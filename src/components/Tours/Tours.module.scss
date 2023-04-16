@@ -3,7 +3,8 @@
   background-image: linear-gradient(to left, white, #b4afaf);
   background-color: whitesmoke;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -83,6 +84,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
 
   .info {

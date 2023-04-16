@@ -7,7 +7,7 @@ const whiteDry = 'https://wine85.s3.eu-central-1.amazonaws.com/whiteDry.jpg';
 const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
 const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
 const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
-// const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
+const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
 
 export const wines ={
   1: {
@@ -64,10 +64,10 @@ export const wines ={
     text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
     vol: '14.2',
   },
-  // 10: {
-  //   img: bambak4,
-  //   title: 'WHITE DRY',
-  //   text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
-  //   vol: '14.0',
-  // },
+  10: {
+    img: bambak4,
+    title: 'BAMBAK Orange DRY',
+    text: 'Floral, fruit delicate aroma with pear, green apple and orange, harmonious, fruit delicate taste with balanced acidity.',
+    vol: '14.0',
+  },
 }

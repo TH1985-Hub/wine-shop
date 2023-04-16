@@ -7,13 +7,13 @@ import wine from './img/wine.png';
 import factory from './img/factory.png';
 import history from './img/history.png';
 import MenuIcon from '@mui/icons-material/Menu';
-
+import { texts } from '../../common/texts/texts';
 
 import styles from './Header.module.scss';
 import cx from 'classnames';
 
 
-function Header({ setOpened, setLang }) {
+function Header({ setOpened, setLang, lang }) {
 
 
   const location = useLocation();
@@ -39,17 +39,21 @@ function Header({ setOpened, setLang }) {
       <div className={styles.leftPart}>
         { !isMobileOrLaptop &&
           <div className={styles.sections}>
-            <NavLink to={'history'}>
+            <NavLink to={'history'} className={styles.navLink}>
               <img src={history} className={styles.shake} alt="grape" />
+              <p>{texts[lang]['home']}</p>
             </NavLink>
-            <NavLink to={'grapes'}>
+            <NavLink to={'grapes'} className={styles.navLink}>
               <img src={grape} className={styles.shake} alt="grape" />
+              <p>{texts[lang]['grapes']}</p>
             </NavLink>
-            <NavLink to={'wines'}>
+            <NavLink to={'wines'} className={styles.navLink}>
               <img src={wine}  className={styles.shake} alt="grape" />
+              <p>{texts[lang]['wines']}</p>
             </NavLink>
-            <NavLink to={'tours'}>
+            <NavLink to={'tours'} className={styles.navLink}>
               <img src={factory} className={styles.shake} alt="grape" />
+              <p>{texts[lang]['tours']}</p>
             </NavLink>
           </div>
         }

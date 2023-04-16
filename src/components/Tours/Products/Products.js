@@ -1,4 +1,5 @@
-import Content from '../../Wines/Products/Content/Content';
+// import Content from '../../Wines/Products/Content/Content';
+import Content from './Content/Content';
 
 import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
 import { tours } from '../../../common/toursTypes/texts'

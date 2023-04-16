@@ -6,10 +6,11 @@ function Content({ img, text }) {
         <div className={styles.flipCardInner}>
           <div className={styles.flipCardFront}>
             <img  className={styles.flipImg} src={img} alt='tours'  />
-            <div className={styles.type}>{text}</div>
+            <p className={styles.type}>{text}</p>
           </div>
           <div className={styles.flipCardBack}>
-            <p className={styles.text}>{text}</p>
+            <p>JRAGHATSPANYAN</p>
+            <p>See more about this wine.</p>
           </div>
         </div>
       </div>
