@@ -29,8 +29,8 @@ function OrderStatus() {
         <div className={styles.orderContainer}>
           <h2>Order Status</h2>
           <p>
-            { orderData.orderStatus === 0 ?
-              <div>Your order with ID {orderData.id} is currently {orderData.orderStatus}.</div> :
+            { orderData.orderStatus === 0 ||  orderData.orderStatus === 2 ?
+              <div>Your payment Succeed</div> :
               <div>Your payment failed</div>
             }
           </p>
