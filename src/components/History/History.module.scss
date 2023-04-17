@@ -51,7 +51,6 @@
 ::-webkit-scrollbar-thumb:hover {
 }
 
-
 @media screen and (min-width: 1200px) {
   .description {
     position: absolute;
@@ -60,7 +59,6 @@
     z-index: 10;
     margin-left: 25px;
   }
-
 }
 
 @media screen and (max-width: 1200px) {
@@ -71,6 +69,8 @@
     width: 100%;
     color: black;
     text-align: center;
+    padding: 0 25px;
+
   }
 
   .info {

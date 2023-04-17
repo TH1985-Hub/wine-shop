@@ -7,7 +7,7 @@ function OrderStatus() {
 
   const [orderData, setOrderData] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(orderData.orderStatus)
+
   useEffect(() => {
     if (orderId) {
       fetch(`https://jraghatspanyan.am:8443/Products/GetOrderStatus/?orderId=${orderId}`, {
@@ -26,12 +26,15 @@ function OrderStatus() {
     <div className={styles.container}>
       {loading && <p>Loading order status...</p>}
       {orderData && (
-        <>
+        <div className={styles.orderContainer}>
           <h2>Order Status</h2>
           <p>
-            Your order with ID {orderData.id} is currently {orderData.orderStatus}.
+            { orderData.orderStatus === 0 ?
+              <div>Your order with ID {orderData.id} is currently {orderData.orderStatus}.</div> :
+              <div>Your payment failed</div>
+            }
           </p>
-        </>
+        </div>
       )}
     </div>
   );

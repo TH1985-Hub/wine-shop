@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './PaymentForm.module.scss'
 
-const PaymentForm = ({ isTours, lang}) => {
+const PaymentForm = ({ isTours, lang }) => {
   const [form, setForm] = useState({
     email: '',
     phone: '',
@@ -104,6 +104,8 @@ const PaymentForm = ({ isTours, lang}) => {
         <input type="email" name="email" id="email" placeholder="Email" value={form.email} onChange={handleChange} className={styles.input} />
       </div>
       <div className={styles.inputWrapper}>
+        <span className={styles.warning}>How tickets you want</span>
+        <span className={styles.warning}>You can't buy less than four tickets</span>
         <input type="number" name="count" min="4" id="count" placeholder="How tickets you want" value={form.count = Number(form.count)} onChange={handleChange} className={styles.input} />
       </div>
       <div className={styles.inputWrapper}>
