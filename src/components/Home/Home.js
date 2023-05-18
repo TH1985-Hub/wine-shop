@@ -54,19 +54,16 @@ function Home({ lang, setLang }) {
           { !isSectionClosed &&
             <>
               <NavLink to='history' className={styles.navLink}>
-                <div className={styles.text}>{texts[lang]['home']}</div>
-              </NavLink>
-              <NavLink to='history' className={styles.navLink}>
-              <div className={styles.text}>{texts[lang]['history']}</div>
+                <div className={styles.text}>{texts[lang]['history']}</div>
               </NavLink>
               <NavLink to='tours' className={styles.navLink}>
-              <div className={styles.text}>{texts[lang]['tours']}</div>
+                <div className={styles.text}>{texts[lang]['tours']}</div>
               </NavLink>
               <NavLink to='grapes' className={styles.navLink}>
-              <div className={styles.text}>{texts[lang]['grapes']}</div>
+                <div className={styles.text}>{texts[lang]['grapes']}</div>
               </NavLink>
               <NavLink to='wines' className={styles.navLink}>
-              <div className={styles.text}>{texts[lang]['wines']}</div>
+                <div className={styles.text}>{texts[lang]['wines']}</div>
               </NavLink>
             </>
           }

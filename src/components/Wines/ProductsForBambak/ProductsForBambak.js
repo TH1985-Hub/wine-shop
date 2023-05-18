@@ -33,12 +33,12 @@ function ProductsForBambak({setIsWine}) {
       { isMobileSize || isTouchDevice ? <ComponentCarousel components={components}/> :
         <>
           <div className={styles.row}>
+            <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>
             <div onClick={()=> setWine('8')}><Content img={bambak2} /></div>
-            <div onClick={()=> setWine('10')}><Content img={bambak4} /></div>
           </div>
           <div className={styles.row}>
             <div onClick={()=> setWine('9')}><Content img={bambak3} /></div>
-            <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>
+            <div onClick={()=> setWine('10')}><Content img={bambak4} /></div>
           </div>
         </>
       }

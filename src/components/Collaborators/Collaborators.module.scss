@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 75vh;
+  gap: 10px;
+}
+
+.content {
+  max-width: 200px;
+  height: 200px;
+
+  img {
+    object-fit: cover;
+  }
+}

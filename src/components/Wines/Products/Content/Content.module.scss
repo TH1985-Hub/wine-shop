@@ -1,9 +1,9 @@
 .flipCard {
   margin-top: 35px;
   background-color: transparent;
-  width: 160px;
-  max-width: 160px;
-  height: 200px;
+  width: 290px;
+  max-width: 290px;
+  height: 400px;
   perspective: 1000px;
   border-radius: 17px;
 }
@@ -44,9 +44,9 @@
 }
 
 .flipImg {
-  width: 160px;
-  max-width: 160px;
-  height: 200px;
+  width: 290px;
+  max-width: 290px;
+  height: 400px;
   border-radius: 17px;
 }
 
@@ -62,8 +62,8 @@
   .flipImg {
     width: 300px;
     max-width: 300px;
-    height: 300px;
-    object-fit: cover;
+    height: 420px;
+    //object-fit: cover;
   }
 
   .flipCard:hover .flipCardInner {
@@ -73,6 +73,6 @@
   .flipCard {
     width: 300px;
     max-width: 300px;
-    height: 300px;
+    height: 420px;
   }
 }

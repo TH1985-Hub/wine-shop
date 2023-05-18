@@ -1,10 +1,18 @@
 .container {
-  height: 75vh;
-  overflow: hidden;
-  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  height: 100vh;
+  //  overflow: hidden;
+//  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+//  display: flex;
+//  justify-content: space-around;
+//  align-items: center;
+}
+
+.info {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  flex-wrap: wrap;
 }
 
 .show {
@@ -22,6 +30,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
+}
+.back {
+  cursor: pointer;
+}
+
+.back:hover {
+  text-decoration: underline;
 }
 
 .allWines {
@@ -65,11 +80,11 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container{
-    overflow: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  //.container{
+  //  overflow: auto;
+  //  flex-wrap: wrap;
+  //  justify-content: center;
+  //}
 
   .title {
     opacity: 1;
@@ -83,12 +98,24 @@
   .right {
     width: 100%;
   }
+
+  .info {
+    height: 83vh;
+  }
+}
+
+@media screen and (max-width: 696px) {
+  .info {
+    background: rgb(222,203,164);
+    background: linear-gradient(180deg, rgba(222,203,164,1) 15%, rgba(255,255,255,1) 87%);
+  }
 }
 
 @media screen and (max-width: 666px) {
   .description {
     max-width: unset;
     padding: 0 25px;
+    margin-bottom: 25px;
   }
 }
 

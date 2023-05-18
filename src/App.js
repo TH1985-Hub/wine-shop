@@ -11,6 +11,7 @@ import Wines from './components/Wines/Wines';
 import Grapes from './components/Grapes/Grapes';
 import Payment from './components/Payment/Payment';
 import OrderStatus from './components/OrderStatus/OrderStatus';
+import Collaborators from './components/Collaborators/Collaborators';
 
 import './App.module.scss';
 import styles from './App.module.scss';
@@ -35,6 +36,7 @@ function App() {
                  <Route path='/grapes' element={<Grapes lang={lang}/>}/>
                  <Route path='/payment' element={<Payment />}/>
                  <Route path='/orderStatus' element={<OrderStatus />}/>
+                 <Route path='/collaborators' element={<Collaborators />}/>
                  <Route path='*' element={<Navigate to="/"/>}/>
                </Routes>
             </div>
