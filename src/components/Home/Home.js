@@ -41,7 +41,7 @@ function Home({ lang, setLang }) {
       <AgeVerification />
       { isVisible  && <Loader /> }
       <div className={!isVisible ? styles.hidden : undefined}>
-        <video onLoadedData={loaded} className={styles.video} src="https://d2dyoi7emzmazg.cloudfront.net/homeVideo.mp4" autoPlay loop playsInline muted/>
+        <video onLoadedData={loaded} className={styles.video} src="https://d2dyoi7emzmazg.cloudfront.net/video.MP4" autoPlay loop playsInline muted/>
         <div className={cx(styles.sections, {[styles.sectionsHideen]: isSectionClosed})}>
           <div className={styles.wrapper}>
             <MenuIcon className={styles.icon} onClick={() => setIsSectionClosed(!isSectionClosed)}/>

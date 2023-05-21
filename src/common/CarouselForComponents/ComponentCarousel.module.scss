@@ -15,13 +15,14 @@ img {
 
 .btnPrev,
 .btnNext {
+  border: none;
   position: absolute;
   cursor: pointer;
   display: inline-block;
   color: #312f2f;
   background-color: transparent;
-  border-color: #312f2f;
-  border-radius: 50%;
+  //border-color: #312f2f;
+  //border-radius: 50%;
   user-select: none;
   transition: opacity 1s;
   padding: 8px 16px;
