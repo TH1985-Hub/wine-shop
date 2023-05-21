@@ -3,8 +3,9 @@ import { getIsTouchDevice } from '../../../utils/getIsDeviceType';
 
 import styles from './Products.module.scss';
 import ComponentCarousel from '../../../common/CarouselForComponents/ComponentCarousel';
+import { texts } from '../../../common/texts/texts';
 
-function Products({ setIsWine, setIsHasSelectedItem }) {
+function Products({ setIsWine, setIsHasSelectedItem, lang }) {
   const garanDmak = 'https://wine85.s3.eu-central-1.amazonaws.com/garanDmak.jpg';
   const redDry = 'https://wine85.s3.eu-central-1.amazonaws.com/redDry.jpg';
   const reserveDry = 'https://wine85.s3.eu-central-1.amazonaws.com/reserveDry.jpg';
@@ -48,14 +49,14 @@ function Products({ setIsWine, setIsHasSelectedItem }) {
     <div>
       { isMobileSize || isTouchDevice ?
         <div className={styles.carouselBlock}>
-          <h1>Ջրաղացպանյան</h1>
+          <h1>{texts[lang]['line1']}</h1>
           <ComponentCarousel components={components}/>
-          <h1>Բամբակ</h1>
+          <h1>{texts[lang]['line2']}</h1>
           <ComponentCarousel components={componentForBambak}/>
         </div> :
         <div className={styles.container}>
           <div className={styles.parent}>
-            <h1>Ջրաղացպանյան</h1>
+            <h1>{texts[lang]['line1']}</h1>
             <div className={styles.left}>
               <div className={styles.flexity}>
                 <div onClick={()=> setWine('1')}><Content img={garanDmak} /></div>
@@ -72,7 +73,7 @@ function Products({ setIsWine, setIsHasSelectedItem }) {
             </div>
           </div>
           <div className={styles.parent}>
-            <h1>Բամբակ</h1>
+            <h1>{texts[lang]['line2']}</h1>
             <div className={styles.right}>
               <div className={styles.flexity}>
                 <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>

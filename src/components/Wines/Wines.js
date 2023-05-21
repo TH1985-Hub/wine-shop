@@ -8,7 +8,7 @@ import { wines } from '../../common/winesInfo/texts';
 import styles from './Wines.module.scss';
 import ProductsForBambak from './ProductsForBambak/ProductsForBambak';
 
-function Wines() {
+function Wines({ lang }) {
   const [isWine, setIsWine] = useState('2');
   const [isHasSelectedItem, setIsHasSelectedItem] = useState(false);
 
@@ -28,7 +28,7 @@ function Wines() {
           <Items img={wines[isWine]['img']}/>
         </div> :
         // <ProductsForBambak setIsWine={setIsWine} /> :
-        <Products setIsHasSelectedItem={setIsHasSelectedItem} setIsWine={setIsWine}/>
+        <Products setIsHasSelectedItem={setIsHasSelectedItem} setIsWine={setIsWine} lang={lang} />
       }
     </div>
   );

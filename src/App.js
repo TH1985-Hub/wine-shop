@@ -32,7 +32,7 @@ function App() {
                  <Route index element={<Home lang={lang} setLang={setLang} />}/>
                  <Route path='/tours' element={<Tours lang={lang}/>}/>
                  <Route path='/history' element={<History lang={lang}/>}/>
-                 <Route path='/wines' element={<Wines/>}/>
+                 <Route path='/wines' element={<Wines lang={lang}/>}/>
                  <Route path='/grapes' element={<Grapes lang={lang}/>}/>
                  <Route path='/payment' element={<Payment />}/>
                  <Route path='/orderStatus' element={<OrderStatus />}/>
