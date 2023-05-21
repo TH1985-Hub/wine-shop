@@ -48,14 +48,14 @@ function Products({ setIsWine, setIsHasSelectedItem }) {
     <div>
       { isMobileSize || isTouchDevice ?
         <div className={styles.carouselBlock}>
-          <h1>Jraghatspanyan</h1>
+          <h1>Ջրաղացպանյան</h1>
           <ComponentCarousel components={components}/>
-          <h1>Bambak</h1>
+          <h1>Բամբակ</h1>
           <ComponentCarousel components={componentForBambak}/>
         </div> :
         <div className={styles.container}>
           <div className={styles.parent}>
-            <h1>Jraghatspanyan</h1>
+            <h1>Ջրաղացպանյան</h1>
             <div className={styles.left}>
               <div className={styles.flexity}>
                 <div onClick={()=> setWine('1')}><Content img={garanDmak} /></div>
@@ -72,7 +72,7 @@ function Products({ setIsWine, setIsHasSelectedItem }) {
             </div>
           </div>
           <div className={styles.parent}>
-            <h1>Bambak</h1>
+            <h1>Բամբակ</h1>
             <div className={styles.right}>
               <div className={styles.flexity}>
                 <div onClick={()=> setWine('7')}><Content img={bambak1} /></div>
