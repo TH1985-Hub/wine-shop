@@ -7,27 +7,27 @@ function History({ lang }) {
 
   const images = [
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist1.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist1.jpg',
       alt: "Image 1"
     },
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist2.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist2.jpg',
       alt: "Image 2"
     },
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist3.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist3.jpg',
       alt: "Image 3"
     },
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist4.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist4.jpg',
       alt: "Image 4"
     },
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist5.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist5.jpg',
       alt: "Image 5"
     },
     {
-      src: 'https://wine85.s3.eu-central-1.amazonaws.com/hist6.jpg',
+      src: 'https://d2dyoi7emzmazg.cloudfront.net/hist6.jpg',
       alt: "Image 6"
     }
   ];

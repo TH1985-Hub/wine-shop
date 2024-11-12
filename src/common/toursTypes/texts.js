@@ -1,7 +1,7 @@
-const tour = 'https://wine85.s3.eu-central-1.amazonaws.com/tour.jpg';
-const tour1 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour1.jpg';
-const tour2 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour2.jpg';
-const tour3 = 'https://wine85.s3.eu-central-1.amazonaws.com/tour3.jpg';
+const tour = 'https://d2dyoi7emzmazg.cloudfront.net/tour.jpg';
+const tour1 = 'https://d2dyoi7emzmazg.cloudfront.net/tour1.jpg';
+const tour2 = 'https://d2dyoi7emzmazg.cloudfront.net/tour2.jpg';
+const tour3 = 'https://d2dyoi7emzmazg.cloudfront.net/tour3.jpg';
 
 export const tours = {
   en: {

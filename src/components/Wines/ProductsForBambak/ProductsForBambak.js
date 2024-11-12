@@ -5,10 +5,10 @@ import styles from './ProductsForBambaks.module.scss';
 import ComponentCarousel from '../../../common/CarouselForComponents/ComponentCarousel';
 
 function ProductsForBambak({setIsWine}) {
-  const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
-  const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
-  const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
-  const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
+  const bambak1 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak1.jpg'
+  const bambak2 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak2.jpg'
+  const bambak3 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak3.jpg'
+  const bambak4 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak4.jpg'
 
   const isTouchDevice = getIsTouchDevice();
   const isMobileSize = window.innerWidth < 786;

@@ -6,16 +6,16 @@ import ComponentCarousel from '../../../common/CarouselForComponents/ComponentCa
 import { texts } from '../../../common/texts/texts';
 
 function Products({ setIsWine, setIsHasSelectedItem, lang }) {
-  const garanDmak = 'https://wine85.s3.eu-central-1.amazonaws.com/garanDmak.jpg';
-  const redDry = 'https://wine85.s3.eu-central-1.amazonaws.com/redDry.jpg';
-  const reserveDry = 'https://wine85.s3.eu-central-1.amazonaws.com/reserveDry.jpg';
-  const roseDry = 'https://wine85.s3.eu-central-1.amazonaws.com/roseDry.jpg';
-  const tigraniSpecial = 'https://wine85.s3.eu-central-1.amazonaws.com/tigraniSpecial.jpg';
-  const whiteDry = 'https://wine85.s3.eu-central-1.amazonaws.com/whiteDry.jpg';
-  const bambak1 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak1.jpg'
-  const bambak2 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak2.jpg'
-  const bambak3 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak3.jpg'
-  const bambak4 = 'https://wine85.s3.eu-central-1.amazonaws.com/bambak4.jpg'
+  const garanDmak = 'https://d2dyoi7emzmazg.cloudfront.net/garanDmak.jpg';
+  const redDry = 'https://d2dyoi7emzmazg.cloudfront.net/redDry.jpg';
+  const reserveDry = 'https://d2dyoi7emzmazg.cloudfront.net/reserveDry.jpg';
+  const roseDry = 'https://d2dyoi7emzmazg.cloudfront.net/roseDry.jpg';
+  const tigraniSpecial = 'https://d2dyoi7emzmazg.cloudfront.net/tigraniSpecial.jpg';
+  const whiteDry = 'https://d2dyoi7emzmazg.cloudfront.net/whiteDry.jpg';
+  const bambak1 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak1.jpg'
+  const bambak2 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak2.jpg'
+  const bambak3 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak3.jpg'
+  const bambak4 = 'https://d2dyoi7emzmazg.cloudfront.net/bambak4.jpg'
 
   const isTouchDevice = getIsTouchDevice();
   const isMobileSize = window.innerWidth < 786;
