@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from 'react';
-import { Route, Routes, Navigate } from "react-router-dom";
+import React, {useCallback, useEffect, useState} from 'react';
+import {Route, Routes, Navigate, useLocation} from "react-router-dom";
 
 import Home from './components/Home/Home';
 import Header from './common/Header/Header';
@@ -15,10 +15,12 @@ import Collaborators from './components/Collaborators/Collaborators';
 
 import './App.module.scss';
 import styles from './App.module.scss';
+import SocialShare from './components/SocialShare/SocialShare';
 
 function App() {
+  const location = useLocation();
+  const isSocialPage = location.pathname === '/share';
   const [ opened, setOpened ] = useState(false);
-
   const open = useCallback(setOpened, [])
   const [ lang, setLang ] = useState('am');
 
@@ -26,7 +28,7 @@ function App() {
     <div className={styles.app}>
       { opened ? <MobileNavMenu lang={lang} setOpened={setOpened} /> :
         <>
-          <Header setOpened={open} setLang={setLang} lang={lang} />
+          {!isSocialPage && <Header setOpened={open} setLang={setLang} lang={lang} />}
             <div>
                <Routes>
                  <Route index element={<Home lang={lang} setLang={setLang} />}/>
@@ -37,10 +39,11 @@ function App() {
                  <Route path='/payment' element={<Payment />}/>
                  <Route path='/orderStatus' element={<OrderStatus />}/>
                  <Route path='/collaborators' element={<Collaborators />}/>
+                 <Route path='/share' element={<SocialShare />}/>
                  <Route path='*' element={<Navigate to="/"/>}/>
                </Routes>
             </div>
-          <Footer />
+          {!isSocialPage && <Footer />}
         </>
       }
     </div>
