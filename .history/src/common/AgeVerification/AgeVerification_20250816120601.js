@@ -77,8 +77,8 @@ function AgeVerification() {
             As part of our commitment to responsible drinking, please confirm that you are of legal drinking age in your country.
           </p>
           <div className={styles.ageVerificationButtons}>
-            <button onClick={handleYesClick}>Yes, I'm over 18</button>
-            <button onClick={handleNoClick}>No, not yet</button>
+            <button onClick={handleYesClick}>Yes</button>
+            <button onClick={handleNoClick}>No</button>
           </div>
         </div>
       )}

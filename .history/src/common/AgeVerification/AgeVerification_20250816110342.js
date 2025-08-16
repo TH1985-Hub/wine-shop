@@ -36,17 +36,17 @@ import cx from 'classnames';
 
 
 function AgeVerification() {
-  
+  // Ստուգում ենք localStorage՝ արդեն հաստատված է արդյոք
   const [isVerified, setIsVerified] = useState(() => {
     return localStorage.getItem('ageVerified') === 'true';
   });
 
-  
+  // Fade-out animation state
   const [isFading, setIsFading] = useState(false);
 
   const handleYesClick = () => {
     setIsFading(true);
-    
+    // Ասինք 500ms transition-ից հետո պահպանենք localStorage
     setTimeout(() => {
       localStorage.setItem('ageVerified', 'true');
       setIsVerified(true);
@@ -77,8 +77,8 @@ function AgeVerification() {
             As part of our commitment to responsible drinking, please confirm that you are of legal drinking age in your country.
           </p>
           <div className={styles.ageVerificationButtons}>
-            <button onClick={handleYesClick}>Yes, I'm over 18</button>
-            <button onClick={handleNoClick}>No, not yet</button>
+            <button onClick={handleYesClick}>Yes</button>
+            <button onClick={handleNoClick}>No</button>
           </div>
         </div>
       )}

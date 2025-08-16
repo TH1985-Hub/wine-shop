@@ -5,7 +5,7 @@ import { texts } from '../../common/texts/texts';
 import video from './video/homeVideo.mp4';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import styles from './Home.module.css';
+import styles from './Home.module.scss';
 import Loader from '../../common/Loader/Loader';
 import AgeVerification from '../../common/AgeVerification/AgeVerification';
 import cx from 'classnames';
