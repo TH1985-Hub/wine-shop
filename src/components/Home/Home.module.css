@@ -1,21 +1,215 @@
 .home {
-  width: 100%;
+  /* height: 100vh; */
+  width: 100%; 
   background: #fbfaf9;
-  font-size: "Playfair Display", serif; 
+  font-family: "Playfair Display", serif; 
+  position: relative;
+  min-height: 100vh;
+  display: dlex;
+  flex-direction: column;
+
+ 
 }
 
 .illustration {
   width: 100%;
-  height: 802px;
-  background: url("/assets/illustration-vineyard.png");
+  min-height: 802px;
+  background: url("./assets/illustration-vineyard.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
+  position: relative; */
   color: #fbfaf9;
+}
+
+  .underContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  padding: 40px 60px;
+  flex-wrap: wrap;
+}
+
+.title {
+ 
+  width: 213px;
+  height: 56px;
+  font-size: 40px;
+  font-weight: 700;
+  /* margin-bottom: 20px; */
+  margin: 0;
+  color: #450201;
+}
+
+.subtitle {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #450201;
+}
+
+.exploreBtn {
+
+  width: 213px;
+  height: 56px;
+  background: #450201;
+  border-radius: 3px;
+  color: #fbfaf9;
+  font-family: "Poppins", sans-serif;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 15px 42px;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.exploreBtn:hover {
+  background: #7a6b53 !important;
+  color: #fbfaf9 !important;
+}
+
+.gridSection {
+  width: 90%;
+  /* max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; */
+ 
+  
+}
+
+
+
+@media (min-width: 1440px) {
+  .illustration {
+    min-height: 802px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 48px;  
+    height: auto;
+  }
+
+  .subtitle {
+    font-size: 42px;
+  }
+
+  .exploreBtn {
+    width: 220px;
+    height: 60px;
+    font-size: 22px;
+    padding: 16px 45px;
+  }
+}
+
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .illustration {
+    min-height: 700px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 42px;
+    width: 220px;
+  }
+
+  .subtitle {
+    font-size: 36px;
+  }
+
+  .exploreBtn {
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    padding: 14px 40px;
+  }
+}
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .illustration {
+    min-height: 600px;
+    background-size: cover;
+  }
+
+  .underContent {
+    flex-direction: column; 
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    width: 200px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .exploreBtn {
+    width: 180px;
+    height: 50px;
+    font-size: 18px;
+    padding: 12px 35px;
+  }
+}
+
+
+@media (max-width: 767px) and (min-width: 480px) {
+  .illustration {
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 28px;
+    width: 180px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .exploreBtn {
+    width: 160px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+}
+
+
+@media (max-width: 479px) {
+  .illustration {
+    min-height: 400px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 24px;
+    width: 150px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .exploreBtn {
+    width: 140px;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 25px;
+  }
 }

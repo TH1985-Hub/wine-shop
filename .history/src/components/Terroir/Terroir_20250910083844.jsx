@@ -1,9 +1,0 @@
-function Terroir(){
-    return(
-        <div>
-            <h1>Hello</h1>
-        </div>
-    )
-}
-
-export default Terroir

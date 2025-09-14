@@ -3,12 +3,13 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { GlobalOutlined, MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import { useLanguage } from '../../contexts/LanguageContext';
 import logo from "./img/logo.svg"; 
 import styles from "./Header.module.css";
 import { texts } from "../../common/texts/texts.jsx";
 
-
-function Header({ lang = "en", setLang = () => {}, setOpened }) {
+function Header({ setOpened }) {
+  const { currentLanguage, changeLanguage } = useLanguage();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false); 
@@ -24,30 +25,30 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
   }, [isMobile]);
 
   const navItemsLeft = [
-    { to: "/", key: "home", label: texts[lang].home},
-    { to: "/about-us", key: "about", label: texts[lang].about  },
-    { to: "/tours", key: "tours", label: texts[lang].tours },
-    { to: "/wines", key: "wines", label: texts[lang].wines },
+    { to: "/", key: "home", label: texts[currentLanguage].home},
+    { to: "/about-us", key: "about", label: texts[currentLanguage].about },
+    { to: "/tours", key: "tours", label: texts[currentLanguage].tours },
+    { to: "/wines", key: "wines", label: texts[currentLanguage].wines },
   ];
 
   const navItemsRight = [
-    { to: "/social", key: "social", label: texts[lang].social},
-    { to: "/terroir", key: "terroir", label:texts[lang].terroir },
-    { to: "/team", key: "team", label: texts[lang].team },
-    { to: "/contact", key: "contact", label:texts[lang].contact},
+    { to: "/social", key: "social", label: texts[currentLanguage].social},
+    { to: "/terroir", key: "terroir", label: texts[currentLanguage].terroir },
+    { to: "/team", key: "team", label: texts[currentLanguage].team },
+    { to: "/contact", key: "contact", label: texts[currentLanguage].contact},
   ];
 
-  const changeLang = (l) => {
-    setLang(l);
+  const handleLanguageChange = (lang) => {
+    changeLanguage(lang);
     setIsLangOpen(false);
   };
 
   return (
     <header className={styles.header}>
-      {/* Desktop Layout */}
+     
       {!isMobile && (
         <nav className={styles.nav}>
-          {/* Left side nav */}
+        
           <div className={styles.navSection}>
             {navItemsLeft.map((item) => (
               <NavLink
@@ -62,12 +63,11 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
             ))}
           </div>
 
-          {/* Logo in center */}
           <NavLink to="/" className={styles.logoLink}>
             <img src={logo} alt="Logo" className={styles.logo} />
           </NavLink>
 
-          {/* Right side nav + language */}
+        
           <div className={styles.navSection}>
             {navItemsRight.map((item) => (
               <NavLink
@@ -81,7 +81,6 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
               </NavLink>
             ))}
 
-            {/* Language */}
             <div className={styles.languageWrapper}>
               <GlobalOutlined
                 className={styles.iconButton}
@@ -89,9 +88,9 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
               />
               {isLangOpen && (
                 <div className={styles.languageDropdown}>
-                  <span onClick={() => changeLang("en")}>EN</span>
-                  <span onClick={() => changeLang("ru")}>RU</span>
-                  <span onClick={() => changeLang("am")}>AM</span>
+                  <span onClick={() => handleLanguageChange("en")}>EN</span>
+                  <span onClick={() => handleLanguageChange("ru")}>RU</span>
+                  <span onClick={() => handleLanguageChange("am")}>AM</span>
                 </div>
               )}
             </div>
@@ -99,7 +98,7 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
         </nav>
       )}
 
-      {/* Mobile Layout */}
+      
       {isMobile && (
         <div className={styles.mobileHeader}>
           <NavLink to="/" className={styles.logoLink}>
@@ -114,9 +113,9 @@ function Header({ lang = "en", setLang = () => {}, setOpened }) {
               />
               {isLangOpen && (
                 <div className={styles.languageDropdown}>
-                  <span onClick={() => changeLang("en")}>EN</span>
-                  <span onClick={() => changeLang("ru")}>RU</span>
-                  <span onClick={() => changeLang("am")}>AM</span>
+                  <span onClick={() => handleLanguageChange("en")}>EN</span>
+                  <span onClick={() => handleLanguageChange("ru")}>RU</span>
+                  <span onClick={() => handleLanguageChange("am")}>AM</span>
                 </div>
               )}
             </div>

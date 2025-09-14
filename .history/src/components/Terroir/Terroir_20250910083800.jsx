@@ -1,5 +1,0 @@
-function Terroir(){
-    return(
-        <di></>
-    )
-}

@@ -1,0 +1,153 @@
+
+.footer {
+ background: url ('./assets/Vector.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #450201; 
+  width: 100%;
+   margin-top: 70px; 
+  padding: 3rem 0;
+  flex-shrink: 0;
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+
+.logo-wrapper {
+  width: 223px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 223px;
+  height: 223px;
+  object-fit: cover;
+  color: #450201 !important;
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #431718;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fbfaf9;
+}
+
+
+
+.columns {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.column--1 {
+  width: 98px;
+}
+
+.column--2 {
+  width: 148px;
+}
+
+.column--3 {
+  width: 149px;
+}
+
+
+.column-header {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+  color: #431718;
+  margin: 0;
+}
+
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  color: #431718;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+
+@media (max-width: 890px) {
+  .container {
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .logo-wrapper {
+    width: 120px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 680px) {
+  .logo-wrapper {
+    display: none;
+  }
+  
+  .columns {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .column:nth-child(3) {
+    display: none;
+  }
+  
+  .columns {
+    gap: 1.5rem;
+  }
+}
