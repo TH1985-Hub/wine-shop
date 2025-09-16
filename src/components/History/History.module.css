@@ -51,6 +51,7 @@
   flex: 1;
   /* min-width: 300px; */
   display: flex;
+  margin-top: 14px;
 }
 
 .mainImage {
@@ -149,6 +150,7 @@
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 1200px) {
