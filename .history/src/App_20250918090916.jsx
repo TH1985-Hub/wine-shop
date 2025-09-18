@@ -33,8 +33,8 @@ function App() {
 
   const [ opened, setOpened ] = useState(false);
   
-  const open = useCallback(() => setOpened(true), []);
-   //const open = useCallback(setOpened, [])
+const open = useCallback(() => setOpened(true), []);
+  // const open = useCallback(setOpened, [])
   
   const isVerified = localStorage.getItem('isVerified') === 'true';
 

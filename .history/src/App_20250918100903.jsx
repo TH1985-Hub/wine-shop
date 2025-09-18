@@ -10,7 +10,7 @@ import Home from './components/Home/Home';
 import Header from './common/Header/Header';
 import Footer from './common/Footer/Footer';
 import About from './components/About/About';
-import Tours from './components/Tours/Tours';
+
 import Team from './components/Team/Team';
 import MobileNavMenu from './common/MobilNavMenu/MobileNavMenu';
 import Wines from './components/Wines/Wines';
