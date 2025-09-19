@@ -11,6 +11,7 @@ import Header from './common/Header/Header';
 import Footer from './common/Footer/Footer';
 import About from './components/About/About';
 import Tours from './components/Tours/Tours';
+import TourDetails from './components/TourDetails/TourDetails';
 import Team from './components/Team/Team';
 import MobileNavMenu from './common/MobilNavMenu/MobileNavMenu';
 import Wines from './components/Wines/Wines';
@@ -60,6 +61,7 @@ function App() {
                 <Route path='/terroir' element={<Terroir />}/>
                 <Route path='/team' element={<Team />}/>
                 <Route path='/contact' element={<Contact />}/>
+                <Route path='/tour-details' element = {<TourDetails/>}/>
                 <Route path='/payment' element={<Payment />}/>
                 <Route path='/orderStatus' element={<OrderStatus />}/>
                 <Route path='/collaborators' element={<Collaborators />}/>

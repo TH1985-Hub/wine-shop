@@ -1,5 +1,6 @@
 
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 import { useLanguage } from "../../contexts/LanguageContext";
 import { toursTexts } from "../../common/texts/toursTexts";
 import styles from "./Tours.module.css";
@@ -9,9 +10,10 @@ import barrelsWine from "./images/barrels-wine.png";
 const Tours = () => {
   const { currentLanguage } = useLanguage();
   const texts = toursTexts[currentLanguage] || toursTexts.en;
+  const navigate =  useNavigate();
 
   const handleViewPackages = () => {
-    console.log("View packages clicked");
+      navigate ("/tour-details");
   };
 
   return (
