@@ -41,6 +41,12 @@ export const texts = {
     'what_to_bring': "Ինչ բերել",
     'cancellation_policy': "Չեղարկման քաղաքականություն",
     'terms_conditions': "Պայմաններ և դրույթներ",
+    'quantity': 'Քանակ',
+    'subtotal': 'Ենթագումար',
+    'total': 'Ընդհանուր',
+    'tour_tickets': "Էքսկուրսիայի տոմսեր",
+    'complete_purchase_subtitle': "Ավարտեք ձեր գնումը՝ տրամադրելով ձեր վճարման մանրամասները",
+    'Amount': "Գումար",
   },
   
   ru: {
@@ -84,8 +90,13 @@ export const texts = {
     'excludes': "Не включает",
     'what_to_bring': "Что взять с собой",
     'cancellation_policy': "Политика отмены",
-    'terms_conditions': "Условия и положения",   
-
+    'terms_conditions': "Условия и положения", 
+    'quantity': 'Количество',
+    'subtotal': 'Промежуточный итог',
+    'total': 'Всего',  
+    'tour_tickets': "Билеты на экскурсию",
+    'complete_purchase_subtitle': "Завершите покупку, предоставив данные для оплаты",
+    'Amount': "Сумма",
   },
 
   en: {
@@ -130,5 +141,11 @@ export const texts = {
     'what_to_bring': "What to Bring",
     'cancellation_policy': "Cancellation Policy",
     'terms_conditions': "Terms & Conditions",
-  },
+    'quantity': 'Quantity',
+    'subtotal': 'Subtotal',
+    'total': 'Total',
+    'tour_tickets': "Tour Tickets",
+    'complete_purchase_subtitle': "Complete your purchase by providing us with your payment details",
+    'amount': "Amount",
+    },
 }

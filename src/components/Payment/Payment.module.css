@@ -1,0 +1,115 @@
+
+.paymentPage {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem 1rem;
+  background: rgba(178, 157, 141, 0.31);
+}
+
+.contentContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pageTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  color: #450201;
+  margin: 0 0 1rem 0;
+}
+
+
+.paymentLayout {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formHeader {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #450201;
+  margin: 20px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 615px;
+}
+
+
+.itemSection {
+  flex: 0 0 350px; 
+}
+
+
+@media (max-width: 968px) {
+  .paymentLayout {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .formSection,
+  .itemSection {
+    width: 100%;
+    max-width: 615px;
+  }
+
+  .itemSection {
+    order: 2; 
+  }
+
+  .formHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .paymentPage {
+    padding: 1rem;
+  }
+
+  .paymentLayout {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .paymentPage {
+    padding: 0.5rem;
+  }
+
+  .titleSection {
+    margin-bottom: 2rem;
+  }
+}

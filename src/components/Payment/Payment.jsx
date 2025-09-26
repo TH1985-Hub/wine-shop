@@ -1,37 +1,48 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import styles from './Payment.module.scss'
-import { useLocation } from 'react-router-dom'
-import PaymentForm from '../../common/PaymentForm/PaymentForm';
-import Items from '../Tours/Items/Items';
+import PaymentForm from "../../common/PaymentForm/PaymentForm";
+import TourCard from "../../components/Tours/Items/Items";
+import styles from "./Payment.module.css";
+import { useLanguage } from "../../contexts/LanguageContext";
+import { texts } from "../../common/texts/texts";
+import { tourDetailsText } from "../../components/TourDetails/tourDetailsTexts";
 
-function Payment({ images, price }) {
-  const location = useLocation()
-  const navigate = useNavigate();
-  const lang = location.state?.lang;
-  const isTours = location.state?.tourId;
+export default function Payment() {
+  const { currentLanguage } = useLanguage();
+  const t = (key) => texts[currentLanguage]?.[key] || texts.en[key];
 
-  const handleClick = () => {
-    navigate("/tours");
-  }
-
-  console.log(lang, isTours);
   return (
-    <div className={styles.container}>
-      { isTours && lang ?
-        <>
-          <PaymentForm  isTours={isTours} lang={lang} />
-          <Items
-            isTours={isTours}
-            lang={lang}
-          />
-        </> :
-        <div className={styles.title}>
-          Please go to the <span onClick={handleClick} className={styles.url}>tours</span> page and select what tour do you want
+    <div className={styles.paymentPage}>
+      <div className={styles.contentContainer}>
+        <div className={styles.titleSection}>
+          <h1 className={styles.pageTitle}>{t("tour_tickets")}</h1>
         </div>
-      }
+
+        <div className={styles.paymentLayout}>
+        
+          <div className={styles.formSection}>
+            <div className={styles.formHeader}>
+              <p className={styles.subtitle}>{t("complete_purchase_subtitle")}</p>
+            </div>
+            <div className={styles.formContainer}>
+              <PaymentForm isTours={true} />
+            </div>
+          </div>
+
+         
+          <div className={styles.itemSection}>
+            <TourCard
+              tourId={1}
+              quantity={1}
+              onQuantityChange={(newQuantity) =>
+                console.log("Quantity changed:", newQuantity)
+              }
+              showSummary={true}
+              tourDetailsText={tourDetailsText}
+              currentLanguage={currentLanguage}
+              texts={texts}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default Payment;

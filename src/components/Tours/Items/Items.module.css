@@ -1,0 +1,264 @@
+.container {
+  width: 385px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.tourCard {
+  background: #FBFAF9;
+  border: 1px solid rgba(178, 157, 141, 0.31);
+  border-radius: 10px;
+  padding: 16px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 20px;
+  width: 300px;
+  height: 65px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #431718 0%, #694A4A 100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tourType {
+  color: #FBFAF9 !important;
+  margin: 0 !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.priceSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 312px;
+  margin: 0 auto;
+}
+
+.priceLabel {
+  color: #1C1F20;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.priceValue {
+  color: #1C1F20 !important;
+  margin: 0 !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.includesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 312px;
+  height: 187px;
+  margin: 0 auto;
+}
+
+.includesLabel {
+  color: #1C1F20;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.includesText {
+  color: #1C1F20;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.quantitySection {
+  display: flex;
+  justify-content: center;
+  margin-top: 27px;
+}
+
+.quantityControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 45px;
+  gap: 10px;
+  width: 331px;
+  height: 56px;
+  background: #FBFAF9;
+  border: 1px solid #450201;
+  border-radius: 10px;
+}
+
+.quantityButton {
+  border: none;
+  background: transparent;
+  color:  #450201;
+  font-size: 16px;
+}
+
+.quantityButton:hover {
+  background: #f0f0f0;
+}
+
+.quantityValue {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #450201;
+  min-width: 30px;
+  text-align: center;
+}
+
+
+.summaryCard {
+  background: none !important;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.summaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 335px;
+}
+
+.summaryLabel {
+  font-family: 'Inter', sans-serif;
+  color: #450201;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.summaryValue {
+  font-family: 'Inter', sans-serif;
+  color: #450201;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.summaryBigValue {
+  font-family: 'Inter', sans-serif;
+  color: #450201;
+  font-size: 30px;
+  font-weight: 600;
+}
+.amountDivider {
+  width: 100%;
+  height: 2px;       
+  background-color: #450201;
+   margin-top: 8px;    
+  margin-bottom: 8px; 
+}
+.summaryDivider {
+  height: 1px;
+  background-color: #450201;
+  margin:  0;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;              
+  background-color: #450201; 
+  margin:  0;            
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 385px;
+  }
+  
+  .tourCard {
+    height: auto;
+    min-height: 500px;
+  }
+  
+  .cardHeader {
+    width: 100%;
+    max-width: 353px;
+  }
+  
+  .priceSection,
+  .includesSection {
+    width: 100%;
+  }
+  
+  .includesSection {
+    height: auto;
+    min-height: 187px;
+  }
+  
+  .includesText {
+    max-height: none;
+  }
+  
+  .quantityControls {
+    width: 100%;
+    max-width: 331px;
+    padding: 0 20px;
+  }
+  
+  .summaryRow {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardHeader {
+    height: 70px;
+    padding: 8px 16px;
+  }
+  
+  .tourType {
+    font-size: 18px !important;
+  }
+  
+  .quantityControls {
+    height: 48px;
+    padding: 0 16px;
+  }
+  
+  .priceValue {
+    font-size: 18px !important;
+  }
+  
+  .includesText {
+    font-size: 13px;
+  }
+}
