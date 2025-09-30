@@ -1,0 +1,132 @@
+/* .card {
+    width: 342px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+     transform: scale(1.03); 
+  }
+  
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .title {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-align: flex start;
+    margin: 8px 0;
+  }
+  
+  .description {
+    color: #450201;
+    text-align: flex start;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-top: 7px;
+  }
+  @media (max-width: 1024px) {
+    .image {
+      height: 260px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image {
+      height: 180px;
+    }
+  } */
+
+  /* .card {
+    width: 342px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: scale(1.03); 
+  }
+  
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 6px;
+    flex-shrink: 0;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .title {
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 8px 0;
+    min-height: 54px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .description {
+    color: #450201;
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-top: 7px;
+    min-height: 72px;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  @media (max-width: 1024px) {
+    .image {
+      height: 260px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image {
+      height: 180px;
+    }
+  } */
+
+  

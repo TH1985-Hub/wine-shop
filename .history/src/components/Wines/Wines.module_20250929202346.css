@@ -1,0 +1,148 @@
+/* // .container {
+//   height: 100vh;
+  //  overflow: hidden;
+//  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+//  display: flex;
+//  justify-content: space-around;
+//  align-items: center;
+// }
+
+// .info {
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+  //background-image: linear-gradient(to right, #DECBA4, #3E5151);
+//   flex-wrap: wrap;
+// }
+
+// .show {
+//   cursor: pointer;
+//   font-weight: bold;
+//   font-size: 22px;
+//   text-decoration: underline;
+// }
+
+// .description {
+//   text-align: center;
+//   margin: 0 15px;
+//   max-width: 300px;
+//   min-width: 300px;
+//   font-weight: 400;
+//   font-size: 24px;
+//   line-height: 35px;
+// }
+// .back {
+//   cursor: pointer;
+// }
+
+// .back:hover {
+//   text-decoration: underline;
+// }
+
+// .allWines {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   align-items: center;
+//   //height: 75vh;
+// }
+
+// .imgContainer {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// .allWinesImg {
+//   width: 150px;
+//   height: 300px;
+//   transition: 1s;
+// }
+
+
+// .allWines:hover {
+//   .allWinesImg {
+//     transition: 1s;
+//     transform: rotate(90deg);
+//   }
+
+//   .title {
+//     opacity: 1;
+//   }
+// }
+
+// .title {
+//   opacity: 0;
+// }
+
+// .background {
+//   position: absolute;
+//   right: 0;
+// }
+
+// @media screen and (max-width: 1200px) {
+  //.container{
+  //  overflow: auto;
+  //  flex-wrap: wrap;
+  //  justify-content: center;
+  //}
+
+//   .title {
+//     opacity: 1;
+//   }
+
+//   .left {
+//     width: 100%;
+//     background-image: linear-gradient(to right, white, #DECBA4);
+//   }
+
+//   .right {
+//     width: 100%;
+//   }
+
+//   .info {
+//     height: 83vh;
+//   }
+// }
+
+// @media screen and (max-width: 696px) {
+//   .info {
+//     background: rgb(222,203,164);
+//     background: linear-gradient(180deg, rgba(222,203,164,1) 15%, rgba(255,255,255,1) 87%);
+//   }
+// }
+
+// @media screen and (max-width: 666px) {
+//   .description {
+//     max-width: unset;
+//     padding: 0 25px;
+//     margin-bottom: 25px;
+//   }
+// } */
+
+.wrapper {
+  position: relative;
+  padding: 160px 16px 64px;
+  min-height: 100vh;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #450201;
+  margin: 0;
+  padd
+}
+
+@media (max-width: 640px) {
+  .wrapper { padding: 140px 12px 48px; }
+  .title { top: 180px; font-size: 40px; line-height: 56px; }
+}
+

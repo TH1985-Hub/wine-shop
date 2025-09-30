@@ -1,0 +1,35 @@
+
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categorySection {
+  margin-top: 58px !important;
+
+}
+
+.categoryTitle {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  color: #431718 !important;
+  margin-bottom: 30px !important;
+  text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .categoryTitle { font-size: 32px; line-height: 42px; }
+}
+
+@media (max-width: 768px) {
+  .categoryTitle { font-size: 28px; line-height: 38px; }
+}
+
+@media (max-width: 480px) {
+  .categoryTitle { font-size: 24px; line-height: 32px; }
+}
