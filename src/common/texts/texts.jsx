@@ -20,7 +20,6 @@ export const texts = {
     'toursText': 'Ընկերությունում հատուկ կարևորություն ունեն տուրիստական այցերի կազմակերպումը, որոնց ընթացքում բացի ընդունված համտեսից ու շրջայցից 130 ամյա մառանում և նոր կառուցված գործարանում, ցանկացողների համար կարող են անցկացվել տարաբնույթ ուսուցողական և տեղեկատվական վարպետության դասեր, այցելուները կարող են  մասնակցել որոշ արտադրական գործընթացներին և այլն',
     'line1': "Ջրաղացպանյան",
     'line2': "Բամբակ",
-     "tour_tickets": "Տուր Տոմսեր",
     'price_per_person': "Գին մեկ անձի համար",
     'currency': "ԴՐ",
     'ticket_includes': "Տոմսը ներառում է:",
@@ -47,6 +46,7 @@ export const texts = {
     'tour_tickets': "Էքսկուրսիայի տոմսեր",
     'complete_purchase_subtitle': "Ավարտեք ձեր գնումը՝ տրամադրելով ձեր վճարման մանրամասները",
     'Amount': "Գումար",
+   
   },
   
   ru: {
@@ -97,6 +97,7 @@ export const texts = {
     'tour_tickets': "Билеты на экскурсию",
     'complete_purchase_subtitle': "Завершите покупку, предоставив данные для оплаты",
     'Amount': "Сумма",
+    'winery': "ВИНОДЕЛЬНЯ",
   },
 
   en: {
@@ -147,5 +148,6 @@ export const texts = {
     'tour_tickets': "Tour Tickets",
     'complete_purchase_subtitle': "Complete your purchase by providing us with your payment details",
     'amount': "Amount",
+   
     },
 }

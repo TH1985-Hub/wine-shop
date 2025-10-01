@@ -1,0 +1,155 @@
+ .container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .topImage {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+  }
+  
+  .titleBlock {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .title {
+    font-family: "Playfair Display", serif !important;
+    font-size: 48px !important;
+    font-weight: bold !important;
+    color: #694A4A !important;
+    margin-bottom: 10px !important;
+  }
+  
+  .subtitle {
+    font-family: "Playfair Display", serif !important;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    color: #694A4A !important;
+    margin-top: 0 !important;
+  }
+  
+  .socialBox {
+    width: 90%;
+     max-width: 1300px; 
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: #f8f8f8;
+    border-radius: 20px;
+  }
+  
+  .link {
+    display: block;
+    padding: 15px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #694A4A;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    margin: 8px 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .link:hover {
+    background: #e8e8e8;
+    color: #000;
+  }
+  
+  .linkContent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  
+  .icon {
+    font-size: 32px;
+    color: #694A4A;
+    min-width: 40px;
+    margin-right: 15px;
+  }
+  
+  .logoIcon {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    min-width: 36px;
+    margin-right: 15px;
+  }
+  
+  .label {
+    text-align: center;
+    flex: 1;
+    font-weight: 500;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .topImage {
+      height: 300px;
+    }
+    
+    .title {
+      font-size: 36px !important;
+    }
+    
+    .subtitle {
+      font-size: 24px !important;
+    }
+    
+    .socialBox {
+      margin: 20px;
+      padding: 30px 15px;
+      max-width: calc(100% - 40px);
+    }
+    
+    .link {
+      padding: 12px 15px;
+      font-size: 16px;
+      max-width: 100%;
+    }
+    
+    .icon {
+      font-size: 28px;
+      margin-right: 12px;
+    }
+    
+    .logoIcon {
+      width: 28px;
+      height: 28px;
+      margin-right: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px !important;
+    }
+    
+    .subtitle {
+      font-size: 20px !important;
+    }
+    
+    .topImage {
+      height: 200px;
+    }
+    
+    .link {
+      font-size: 14px;
+      padding: 10px 12px;
+    }
+    
+    .icon, .logoIcon {
+      margin-right: 10px;
+    }
+  }

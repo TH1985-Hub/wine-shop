@@ -19,7 +19,7 @@ import Payment from './components/Payment/Payment';
 import OrderStatus from './components/OrderStatus/OrderStatus'; 
 import Collaborators from './components/Collaborators/Collaborators'; 
 import AgeVerification from './common/AgeVerification/AgeVerification'; 
-import SocialShare from './components/SocialShare/SocialShare'; 
+import Social from './components/Social/Social'; 
 import styles from './App.module.scss'; 
 
 function App() { const location = useLocation(); 
@@ -39,7 +39,7 @@ function App() { const location = useLocation();
         { opened ? 
         <MobileNavMenu setOpened={setOpened} /> :
            <> 
-           {!isSocialPage && !isAgeVerificationPage && <Header setOpened={open} />} 
+           {!isAgeVerificationPage && <Header setOpened={open} />} 
 
     <div> 
       <Routes>
@@ -56,11 +56,11 @@ function App() { const location = useLocation();
          <Route path='/payment' element={<Payment />}/> 
          <Route path='/orderStatus' element={<OrderStatus />}/> 
          <Route path='/collaborators' element={<Collaborators />}/> 
-         <Route path='/share' element={<SocialShare />}/> 
+         <Route path='/share' element={<Social />}/> 
          <Route path='*' element={<Navigate to="/"/>}/>
       </Routes> 
       </div>
-       {!isSocialPage && !isAgeVerificationPage && <Footer />} 
+       {!isAgeVerificationPage && <Footer />} 
        </> 
        } 
        </div> 
