@@ -18,7 +18,7 @@ import Terroir from './components/Terroir/Terroir';
 import Payment from './components/Payment/Payment'; 
 import OrderStatus from './components/OrderStatus/OrderStatus'; 
 import Collaborators from './components/Collaborators/Collaborators'; 
-import AgeVerification from './common/AgeVerification/AgeVerification'; 
+import AgeVerification from './components/AgeVerification/AgeVerification'; 
 import Social from './components/Social/Social'; 
 import styles from './App.module.scss'; 
 

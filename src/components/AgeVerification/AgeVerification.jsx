@@ -1,10 +1,8 @@
-
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Flex, Typography, Button } from 'antd';
 import styles from './AgeVerification.module.css';
 import splashWine from './assets/red-wine-splash-dynamic-flowing-liquid.png';
-import Loader from "../../common/Loader/Loader.jsx";
 import cx from 'classnames';
 
 const AgeVerification = () => {

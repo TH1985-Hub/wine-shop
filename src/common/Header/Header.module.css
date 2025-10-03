@@ -1,11 +1,9 @@
-
 :root {
   --wine: #450201;
   --wine-dark: #431718;
   --text: #1c1f20;
   --bg: #ffffff;
 }
-
 
 .header {
   width: 100%;
@@ -14,38 +12,35 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  padding: 0 5%;
   height: 100px;
   position: relative;
   z-index: 1000;
 }
 
-
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 1300px;
+  gap: clamp(30px, 6vw, 100px); 
 }
-
 
 .navSection {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: clamp(30px, 6vw, 100px); 
 }
-
 
 .navLink {
   text-decoration: none;
   font-family: "Playfair Display", serif;
-  font-size: 20px;
+  font-size: clamp(16px, 1.6vw, 20px); 
   font-weight: 400;
   color: var(--text);
   position: relative;
   transition: color 0.3s ease;
- 
+  white-space: nowrap;
 }
 
 .navLink:hover {
@@ -79,12 +74,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 40px;
+  flex-shrink: 0;
 }
+
 .logo {
-  height: 70px;
+  height: clamp(50px, 5.5vw, 75px); 
   width: auto;
-  /* color: var(--wine-dark) !important; */
   transition: transform 0.2s ease;
 }
 .logo:hover {
@@ -93,10 +88,11 @@
 
 .languageWrapper {
   position: relative;
+  flex-shrink: 0; 
 }
 
 .iconButton {
-  font-size: 20px;
+  font-size: clamp(18px, 1.8vw, 22px); 
   color: var(--wine);
   cursor: pointer;
   background: none;
@@ -104,6 +100,7 @@
   display: flex;
   align-items: center;
   transition: color 0.2s ease, transform 0.2s ease;
+  flex-shrink: 0;
 }
 .iconButton:hover {
   color: var(--wine-dark);
@@ -148,7 +145,6 @@
   gap: 16px;
 }
 
-
 .mobileNav {
   position: absolute;
   top: 100%;
@@ -173,12 +169,134 @@
 }
 
 
-@media (max-width: 992px) {
+@media (min-width: 1500px) {
   .nav {
-    display: none; 
+    gap: 100px;
+  }
+  .navSection {
+    gap: 100px;
+  }
+}
+
+
+@media (min-width: 1400px) and (max-width: 1499px) {
+  .nav {
+    gap: 90px;
+  }
+  .navSection {
+    gap: 90px;
+  }
+}
+
+
+@media (min-width: 1300px) and (max-width: 1399px) {
+  .nav {
+    gap: 80px;
+  }
+  .navSection {
+    gap: 80px;
+  }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .nav {
+    gap: 70px;
+  }
+  .navSection {
+    gap: 70px;
+  }
+}
+
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .nav {
+    gap: 60px;
+  }
+  .navSection {
+    gap: 60px;
+  }
+  .header {
+    padding: 0 4%;
+  }
+}
+
+
+@media (min-width: 1000px) and (max-width: 1099px) {
+  .nav {
+    gap: 50px;
+  }
+  .navSection {
+    gap: 50px;
+  }
+  .header {
+    padding: 0 3%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 999px) {
+  .nav {
+    gap: 40px;
+  }
+  .navSection {
+    gap: 40px;
+  }
+  .header {
+    padding: 0 2%;
+  }
+}
+ 
+@media (min-width: 900px) and (max-width: 991px) {
+  .nav {
+    gap: 35px;
+  }
+  .navSection {
+    gap: 35px;
+  }
+  .navLink {
+    font-size: 16px;
   }
   .logo {
-    height: 60px;
+    height: 55px;
+  }
+  .header {
+    padding: 0 2%;
+    height: 90px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .nav {
+    gap: 30px;
+  }
+  .navSection {
+    gap: 30px;
+  }
+  .navLink {
+    font-size: 15px;
+  }
+  .logo {
+    height: 50px;
+  }
+  .header {
+    padding: 0 2%;
+    height: 85px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+  .header {
+    height: 80px;
+    padding: 0 20px;
+  }
+  .logo {
+    height: 50px;
   }
 }
 
@@ -186,11 +304,5 @@
   .header {
     height: 80px;
     padding: 0 14px;
-  }
-  .logo {
-    height: 50px;
-  }
-  .navLink {
-    font-size: 16px;
   }
 }
