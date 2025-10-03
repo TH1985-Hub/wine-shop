@@ -1,0 +1,35 @@
+ .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 137px 20px;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+  }
+  
+  @media (max-width: 1024px) {
+    .content {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+  
+  .leftSection {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .rightSection {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 80px 16px;
+    }
+  }

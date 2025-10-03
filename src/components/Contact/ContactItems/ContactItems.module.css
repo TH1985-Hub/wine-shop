@@ -1,0 +1,137 @@
+  .container {
+    width: 100%;
+    margin-top: 70px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .contactItems {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 56px;
+  }
+  
+  .contactItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+ 
+  .iconCircle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #431718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+ 
+  .icon {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  
+  .contactText {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #000000;
+  }
+  
+  .socialSection {
+    margin-top: 56px;
+  }
+  
+  .socialTitle {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #000;
+  }
+  
+  .socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .socialLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    color: #000;
+  }
+  
+  .socialLink:hover {
+    opacity: 0.7;
+  }
+  
+  
+  .socialIcon {
+    font-size: 20px;
+    color: #431718;
+  }
+  
+  .socialName {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 768px) {
+    .title,
+    .socialTitle {
+      font-size: 28px;
+    }
+  
+    .subtitle {
+      font-size: 14px;
+    }
+  
+    .iconCircle {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .icon {
+      font-size: 18px;
+    }
+  
+    .contactText {
+      font-size: 16px;
+    }
+  
+    .socialLinks {
+      gap: 16px;
+    }
+  
+    .socialIcon {
+      font-size: 18px;
+    }
+  
+    .socialName {
+      font-size: 14px;
+    }
+  }
+  
