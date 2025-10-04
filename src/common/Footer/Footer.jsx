@@ -1,46 +1,26 @@
 import React from 'react';
 import { Typography } from 'antd';
 import { NavLink } from 'react-router-dom';
-import { 
-  FacebookFilled,
-  InstagramFilled,
-  YoutubeFilled 
-} from '@ant-design/icons';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { footerTexts } from '../../common/texts/footerTexts';
 import logo from './img/logo.png';
 import styles from './Footer.module.css';
 
-
 const Footer = () => {
-  const { currentLanguage} = useLanguage();
+  const { currentLanguage } = useLanguage();
   const texts = footerTexts?.[currentLanguage] || footerTexts.en;
 
-
-  
   return (
     <footer className={styles.footer}>
       <div className={styles['footer-content']}>
 
-        {/* Logo Section */}
+       
         <div className={styles['logo-section']}>
           <div className={styles['logo-wrapper']}>
             <img src={logo} alt="Jraghatspanyan Wines" className={styles.logo} />
           </div>
-          <div className={styles['social-icons']}>
-            <a href="#" aria-label="Facebook">
-              <FacebookFilled />
-            </a>
-            <a href="#" aria-label="Instagram">
-              <InstagramFilled />
-            </a>
-            <a href="#" aria-label="YouTube">
-              <YoutubeFilled />
-            </a>
-          </div>
         </div>
 
-      
         <div className={styles['footer-section']}>
           <Typography.Title level={5} className={styles['column-header']}>
             {texts.findUs}
@@ -66,7 +46,6 @@ const Footer = () => {
             <NavLink to="/aboutUs" className={styles.link}>
               {texts.aboutUs}
             </NavLink>
-
             <NavLink to="/terror" className={styles.link}>
               {texts.terroir}
             </NavLink>
@@ -94,7 +73,6 @@ const Footer = () => {
         </div>
       </div>
 
-    
       <div className={styles.copyright}>
         <Typography.Text>
           {texts.copyright}

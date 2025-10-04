@@ -121,6 +121,7 @@ export const texts = {
     'toursText': 'After the completion of construction and finishing works, the organization of tourist visits will be of particular importance, during which, in addition to the accepted tasting and excursion, various educational and informational master classes will be held for those who wish, they will participate in production processes, etc.',
     'line1': "Jraghatspanyan",
     'line2': "Bambak",
+    'tour_tickets': "Tour Tickets",
     'price_per_person': "Price Per Person",
     'currency': "AMD",
     'ticket_includes': "Ticket Includes:",

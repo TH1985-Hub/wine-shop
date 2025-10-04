@@ -1,9 +1,9 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Card, Button, Typography, Row, Col } from "antd";
+import React from "react";
 import { useLanguage } from "../../contexts/LanguageContext";
-import { tourDetailsText } from "./tourDetailsTexts";
+import { useNavigate } from "react-router-dom";
+import { tourDetailsText } from "../TourDetails/tourDetailsTexts";
 import { texts } from "../../common/texts/texts";
+import { Typography, Button, Row, Col, Card } from "antd";
 import styles from "./TourDetails.module.css";
 
 const { Title, Text } = Typography;
@@ -13,19 +13,19 @@ const TourDetails = () => {
   const navigate = useNavigate();
 
   const tickets = tourDetailsText[currentLanguage] || tourDetailsText.en;
-  
-  const t = (key) => {
-    return texts[currentLanguage]?.[key] || texts.en[key];
-  };
 
-  const handleBuyTicket = (ticketId, ticketType, ticketPrice) => {
-    navigate('/payment', { 
-      state: { 
-        ticketId,
-        ticketType,
-        ticketPrice
-      } 
-    });
+  const t = (key) => texts[currentLanguage]?.[key] || texts.en[key];
+
+  const handleBuyTicket = (ticketId) => {
+   
+    const ticketEn = tourDetailsText.en.find((t) => t.id === ticketId);
+    const ticketAm = tourDetailsText.am?.find((t) => t.id === ticketId) || ticketEn;
+    const ticketRu = tourDetailsText.ru?.find((t) => t.id === ticketId) || ticketEn;
+
+    const ticket = { id: ticketId, en: ticketEn, am: ticketAm, ru: ticketRu };
+
+  
+    navigate("/payment", { state: { ticket } });
   };
 
   return (
@@ -64,12 +64,12 @@ const TourDetails = () => {
                 </div>
 
                 <div className={styles.cardFooter}>
-                  <Button 
-                    type="primary" 
-                    size="large" 
-                    className={styles.buyButton} 
+                  <Button
+                    type="primary"
+                    size="large"
+                    className={styles.buyButton}
                     block
-                    onClick={() => handleBuyTicket(ticket.id, ticket.type, ticket.price)}
+                    onClick={() => handleBuyTicket(ticket.id)}
                   >
                     {t("buy_ticket")}
                   </Button>
@@ -86,3 +86,5 @@ const TourDetails = () => {
 };
 
 export default TourDetails;
+
+

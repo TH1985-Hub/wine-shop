@@ -14,7 +14,7 @@ const TerroirTickets = () => {
   const texts = terroirTicketsTexts[currentLanguage]; 
 
   const handleButtonClick = () => {
-    navigate(texts.buttonLink || "/tickets");
+    navigate( "/tour-details");
   };
 
   return (
