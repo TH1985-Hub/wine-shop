@@ -1,5 +1,3 @@
-// import styles from './Items.module.scss';
-
 import React, { useState } from 'react';
 import { Card, Typography, Button, Space } from 'antd';
 import { MinusOutlined, PlusOutlined } from '@ant-design/icons';

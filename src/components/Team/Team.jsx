@@ -1,4 +1,3 @@
-
 import React, { useMemo } from "react";
 import { Row, Col } from "antd";
 import { useLanguage } from '../../contexts/LanguageContext';

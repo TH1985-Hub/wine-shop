@@ -16,6 +16,7 @@
     "and": "^0.0.3",
     "antd": "^5.27.1",
     "classnames": "^2.3.2",
+    "framer-motion": "^12.23.22",
     "is-arrayish": "^0.3.2",
     "isexe": "^3.1.1",
     "react": "^18.2.0",
