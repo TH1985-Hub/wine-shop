@@ -6,7 +6,7 @@ import tigraniSpecial from './images/Jraghatspanyan/tigraniSpecial.png';
 import whiteDry from './images/Jraghatspanyan/white-dry.png';
 import bambakRedDry from './images/Bambak/red.dry.png';
 import bambakOrangeDry from './images/Bambak/Bambak-orange-dry.png';
-import bambakWhite from './images/Bambak/bambak-white.png';
+import bambakWhite from './images/Bambak/Bambak-white.png';
 import roseDry from "./images/Jraghatspanyan/rose.dry.png";
 
 
