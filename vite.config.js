@@ -7,6 +7,6 @@ export default defineConfig({
     //   port: 5175,
     //   open: true,
     //  },
-     base: "/wine-shop/",
+    //  base: "/wine-shop/",
 
 });
